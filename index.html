@@ -1,0 +1,787 @@
+<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><meta content="web_standard" name="shell-type"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container":"#edeeef","on-primary":"#ffffff","inverse-on-surface":"#f0f1f2","primary":"#004d99","on-secondary-container":"#5d6800","primary-container":"#1565c0","secondary-fixed-dim":"#bdd200","secondary":"#596400","on-tertiary-fixed":"#1c1b1b","on-surface":"#191c1d","surface-container-high":"#e7e8e9","on-secondary-fixed-variant":"#434b00","inverse-primary":"#a9c7ff","on-primary-fixed":"#001b3d","on-error":"#ffffff","on-tertiary-container":"#e7e4e4","tertiary-fixed":"#e5e2e1","primary-fixed":"#d6e3ff","on-primary-container":"#dae5ff","error-container":"#ffdad6","surface":"#f8f9fa","surface-container-lowest":"#ffffff","surface-bright":"#f8f9fa","background":"#f8f9fa","surface-variant":"#e1e3e4","on-tertiary-fixed-variant":"#474646","outline-variant":"#c2c6d4","surface-container-highest":"#e1e3e4","surface-container-low":"#f3f4f5","on-secondary":"#ffffff","tertiary-fixed-dim":"#c8c6c5","tertiary-container":"#676666","on-tertiary":"#ffffff","on-surface-variant":"#424752","secondary-fixed":"#d8ef00","on-background":"#191c1d","secondary-container":"#d5ec00","tertiary":"#4f4e4e","on-error-container":"#93000a","outline":"#727783","on-secondary-fixed":"#1a1e00","inverse-surface":"#2e3132","on-primary-fixed-variant":"#00468c","surface-tint":"#005db7","error":"#ba1a1a","primary-fixed-dim":"#a9c7ff","surface-dim":"#d9dadb"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-xl":"2.5rem","space-xs":"0.25rem","space-md":"1rem","space-sm":"0.5rem","margin-mobile":"1.25rem","margin":"3rem","gutter-mobile":"1rem","gutter":"1.5rem","space-lg":"1.5rem"},fontFamily:{"label-sm":["Space Grotesk"],"display-hero-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"label-lg":["Space Grotesk"],"label-md":["Space Grotesk"],"display-hero":["Plus Jakarta Sans"],"body-lg":["Inter"],"body-md":["Inter"],"body-sm":["Inter"]},fontSize:{"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"600"}],"display-hero-mobile":["38px",{"lineHeight":"42px","letterSpacing":"-0.03em","fontWeight":"800"}],"headline-md":["24px",{"lineHeight":"30px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-sm":["20px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg-mobile":["28px",{"lineHeight":"34px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.03em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"18px","letterSpacing":"0.04em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.06em","fontWeight":"500"}],"display-hero":["64px",{"lineHeight":"68px","letterSpacing":"-0.04em","fontWeight":"800"}],"body-lg":["18px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"400"}],"body-md":["15px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full max-w-[1360px] mx-auto px-6 lg:px-12 flex items-center justify-between gap-6"><div class="flex items-center gap-6"><a class="flex items-center gap-3 group" data-path="inicio" href="#"><span class="font-headline-sm text-headline-sm uppercase tracking-tighter text-on-surface font-bold">KAOS</span><div class="inline-flex items-center justify-center gap-1.5 px-2.5 py-1 bg-secondary-container rounded-full"><span class="w-2.5 h-1 bg-on-surface rounded-full inline-block"></span><span class="w-2.5 h-1 bg-on-surface rounded-full inline-block"></span></div><span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hidden sm:inline-block">OAXACA</span></a><div class="hidden xl:flex items-center gap-2 pl-4"><div class="flex items-center gap-2 px-3 py-1 bg-surface-container rounded-full"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface">Abierto Ahora • Leandro Valle #310</span></div></div></div><nav class="hidden lg:flex items-center gap-8" data-active-classes="text-on-surface font-semibold bg-surface-container-high px-3 py-1.5 rounded-lg"><a aria-current="page" class="uppercase tracking-wider transition-colors text-on-surface font-semibold bg-surface-container-high px-3 py-1.5 rounded-lg" data-path="inicio" href="#">Inicio</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="menu" href="#">Menú</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="galeria-interactiva" href="#">Galería Interactiva</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="comunidad-blaise" href="#">Comunidad Blaise</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="ubicacion-y-horarios" href="#">Ubicación y Horarios</a></nav><div class="flex items-center gap-4"><a class="hidden sm:inline-flex items-center px-4 py-2 bg-secondary-container text-on-surface font-label-md text-label-md uppercase tracking-wider font-semibold rounded-lg shadow-[2px_2px_0px_#191c1d] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all" data-path="pedidos-en-linea" href="#">Pedir en Línea</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-140px)]"><div class="flex flex-col w-full">
+<!-- SECTION 1: HERO CONCISO -->
+<section class="w-full max-w-[1360px] mx-auto px-6 lg:px-12 py-10 lg:py-16">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+<!-- Left Column: Copy & CTAs -->
+<div class="lg:col-span-6 flex flex-col items-start gap-6">
+<!-- Live Status Pill -->
+<div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 bg-surface-container rounded-full shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-semibold">
+            Abierto Ahora • Leandro Valle #310, Oaxaca
+          </span>
+<div class="inline-flex items-center justify-center gap-1 ml-1 px-1.5 py-0.5 bg-secondary-container rounded-full">
+<span class="w-1.5 h-0.5 bg-on-surface rounded-full inline-block"></span>
+<span class="w-1.5 h-0.5 bg-on-surface rounded-full inline-block"></span>
+</div>
+</div>
+<!-- Hero Title & Descriptor -->
+<div class="flex flex-col gap-3">
+<span class="font-label-md text-label-md uppercase tracking-[0.2em] text-primary-container font-semibold">
+            Specialty Coffee &amp; Bubble Tea Hub
+          </span>
+<h1 class="font-display-hero text-display-hero uppercase tracking-tighter text-on-surface font-extrabold leading-none">
+            IN MY <br class="hidden sm:inline">
+<span class="text-primary-container inline-block">KAOS</span> ERA.
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg mt-2">
+            Cafetería de especialidad, bubble tea y waffles de autor en el corazón de Oaxaca. Un punto de encuentro minimalista diseñado para el paladar inquieto y la vibra creativa.
+          </p>
+</div>
+<!-- Metrics / Quick tags -->
+<div class="flex items-center gap-6 py-2">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">4</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Cuadras del Zócalo</span>
+</div>
+<div class="w-px h-8 bg-surface-container-highest"></div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">100%</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Grano Pluma Hidalgo</span>
+</div>
+<div class="w-px h-8 bg-surface-container-highest"></div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm font-bold text-secondary">A+</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Boardgame Nights</span>
+</div>
+</div>
+<!-- Buttons Compactos -->
+<div class="flex flex-wrap items-center gap-4 pt-1">
+<a class="inline-flex items-center gap-2 px-6 py-3 bg-secondary-container text-on-surface font-label-md text-label-md uppercase tracking-wider font-bold rounded-lg shadow-[3px_3px_0px_#191c1d] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all" href="#menu-section">
+<span class="material-symbols-outlined text-lg">local_cafe</span>
+            Explorar Menú
+          </a>
+<a class="inline-flex items-center gap-2 px-6 py-3 bg-surface-container-lowest text-on-surface font-label-md text-label-md uppercase tracking-wider font-semibold rounded-lg shadow-sm hover:bg-surface-container transition-all" href="#ubicacion-section">
+<span class="material-symbols-outlined text-lg text-primary-container">near_me</span>
+            Cómo Llegar
+          </a>
+</div>
+</div>
+<!-- Right Column: Minimalist Bento Collage -->
+<div class="lg:col-span-6">
+<div class="grid grid-cols-12 gap-3.5 relative">
+<!-- Big Frame: Fachada Limpia -->
+<div class="col-span-7 row-span-2 relative group overflow-hidden rounded-xl bg-surface-container shadow-md">
+<div class="aspect-[4/5] w-full overflow-hidden">
+<img alt="Fachada exterior minimalista de Kaos Coffee Shop en Leandro Valle Oaxaca" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCi7xj8pZULsBIQueGNKWHAgcHd5F72N1agRt0gl2Fp3ZfOpxg36GZf6A-uft4mQiYsatQau7G6Z_TGxmnEIyWDksdULDZwWhSkYLfmvfF4cIJ4GncDzzt8vIymzKmpgL_3Mjf8GK7d8tjhs-d3voD4V02Jw0rlbc9a4CzabBgT0t580Yh8nCduKan1iHz_VI6NRP1Ux9-uQxfdPeWOmPby2lf8mpYMwCviFGPspHejNXJYR8d8YMQGHUDwdLygaXaGxA">
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
+<div class="absolute bottom-3 left-3 right-3 flex items-center justify-between text-surface-container-lowest">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary-container font-bold">Exterior</span>
+<span class="font-headline-sm text-headline-sm font-semibold text-white">Leandro Valle 310</span>
+</div>
+<span class="material-symbols-outlined text-xl">arrow_outward</span>
+</div>
+</div>
+<!-- Top Small Frame: Escultura Mascota -->
+<div class="col-span-5 relative group overflow-hidden rounded-xl bg-surface-container shadow-sm">
+<div class="aspect-square w-full overflow-hidden">
+<img alt="Escultura minimalista de la mascota Kaos empotrada en muro de concreto" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-Y7wjklRXwMRgBmwveSmQzIwSv_lINs9pMyF0KbgRMRpHoQPvQaq5HTsGSETy4MprCtk_oKhCEPGJ2eZc7XKX7ZZteKAmVSYJSwjz2PYblbzKRemnpIRD6u4bUxkU9eF1ggH4U1MP_yl6BafVN4VYrQy57m7o4MJ6gE2BcCAtdjN7nvEXxJAwrFOgRv5T9tgUcawErJKxHC6IL483-MDc3mACE4EnjKoWIajZLJsatg86PuRShmuYv-4UhCNvHH2KoQ">
+</div>
+<div class="absolute top-2 right-2 bg-on-surface/85 backdrop-blur-sm px-2 py-0.5 rounded text-white font-label-sm text-[9px] uppercase tracking-widest">
+              Wall Art
+            </div>
+<div class="absolute bottom-2 left-2 text-white font-label-sm text-label-sm font-medium drop-shadow">
+              Escultura Concreto
+            </div>
+</div>
+<!-- Bottom Small Frame: Signature Beverage -->
+<div class="col-span-5 relative group overflow-hidden rounded-xl bg-surface-container shadow-sm">
+<div class="aspect-square w-full overflow-hidden">
+<img alt="Vaso signature Taro Royale y Bubble Tea en Kaos Coffee" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrqdo-sqt7icz0Xzu33tOTTz6Y6lqqpl6OeNQHT-e3BGblUj6ekbfyZgFg3-6V47dQSDcLl_r1StHx-Y3qRYntaTEcBApXLk-dZwcnMVKdPnYtHomEOv0OnCvHJCQHjA3LO7ErlevtrgpZQeXbf24Cp2srTpPHE--qreJL0y4T6ioADvUREmIAQ35QDYUfl95M37s_TYS8lPTYFKHwjUCX-bCEWqWc7L2UucHtik-qvQaLP5sO42NYxznNoh1wgzlsPw">
+</div>
+<div class="absolute top-2 right-2 bg-secondary-container text-on-surface px-2 py-0.5 rounded font-label-sm text-[9px] uppercase font-bold tracking-widest">
+              Signature
+            </div>
+<div class="absolute bottom-2 left-2 text-white font-label-sm text-label-sm font-medium drop-shadow">
+              Taro Royale
+            </div>
+</div>
+<!-- Floater Mascot Badge -->
+<div class="absolute -bottom-4 -left-4 bg-on-surface text-secondary-container px-3.5 py-2 rounded-full shadow-lg flex items-center gap-2">
+<div class="flex items-center gap-1 bg-secondary-container px-2 py-1 rounded-full">
+<span class="w-2.5 h-1 bg-on-surface rounded-full"></span>
+<span class="w-2.5 h-1 bg-on-surface rounded-full"></span>
+</div>
+<span class="font-label-sm text-label-sm uppercase font-bold tracking-widest text-white">Kaos Mascot</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 2: GALERÍA DE ARTES INTERACTIVA COMPACTA -->
+<section class="w-full bg-surface-container-low py-12 lg:py-16">
+<div class="max-w-[1360px] mx-auto px-6 lg:px-12 flex flex-col gap-6">
+<!-- Gallery Header -->
+<div class="flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+<div>
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 bg-primary-container rounded-sm"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-container font-semibold">Curaduría Visual</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg uppercase tracking-tight text-on-surface font-bold mt-1">
+            Galería de Espacio &amp; Vibe
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Detalles táctiles, arquitectura limpia y momentos comunitarios en Oaxaca Centro.</p>
+</div>
+<!-- Controls Slider -->
+<div class="flex items-center gap-3">
+<button aria-label="Anterior" class="w-10 h-10 rounded-lg bg-surface-container-lowest text-on-surface flex items-center justify-center shadow-sm hover:bg-surface-container transition-all active:scale-95" id="gallery-prev">
+<span class="material-symbols-outlined text-lg">arrow_back</span>
+</button>
+<div class="font-label-sm text-label-sm text-on-surface font-bold tracking-widest px-2" id="gallery-counter">
+            01 / 05
+          </div>
+<button aria-label="Siguiente" class="w-10 h-10 rounded-lg bg-surface-container-lowest text-on-surface flex items-center justify-center shadow-sm hover:bg-surface-container transition-all active:scale-95" id="gallery-next">
+<span class="material-symbols-outlined text-lg">arrow_forward</span>
+</button>
+</div>
+</div>
+<!-- Main Stage Viewport (4:3 ratio centered compact) -->
+<div class="w-full bg-surface-container-lowest rounded-xl p-4 sm:p-6 shadow-sm">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
+<!-- Image Stage -->
+<div class="lg:col-span-8 overflow-hidden rounded-lg bg-surface-container-high relative aspect-[4/3] max-h-[460px] flex items-center justify-center">
+<img alt="Rótulo In my Kaos Era en muro de concreto dentro de Kaos Coffee Shop" class="w-full h-full object-cover transition-opacity duration-300 group-hover:scale-105" id="gallery-main-img" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAVRwJBe57fKg47-ytUdi5gGdgLXhl0AzxcF1rCV2pYGiKJj9GgnBAE0fwCvCm8dADKyl9tVAnqfLO7tXGOm1Uvs4hl0sbErmF8iMPcZz-5f8y5kEgEDX464FaytsB3e8t1eiEYze7M1JZFRB6_vEBrOn7fvU0esV8V64CFu4lZB_yOPDcIx-MqbAk6qqkj-cD0JK4RFB0YRdABquSI1fe6fftuU-1Ncz5GQsDigVxN2RJB7thTFEpFOaOWfDxZ91WTyA" onclick="openGalleryLightbox()">
+<div class="absolute top-4 left-4 bg-on-surface/90 text-secondary-container px-3 py-1 rounded font-label-sm text-label-sm uppercase tracking-wider font-bold" id="gallery-badge">
+              Tipografía &amp; Muro
+            </div>
+<button id="gallery-lightbox-trigger" aria-label="Ver en pantalla completa" class="absolute bottom-4 right-4 w-10 h-10 rounded-full bg-on-surface/80 hover:bg-on-surface text-surface-container-lowest flex items-center justify-center backdrop-blur-md shadow-md transition-all active:scale-95 group" onclick="openGalleryLightbox()"><span class="material-symbols-outlined text-xl group-hover:scale-110 transition-transform">zoom_in</span></button></div>
+<!-- Metadata & Caption Detail -->
+<div class="lg:col-span-4 flex flex-col justify-between h-full py-2">
+<div class="flex flex-col gap-3">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold" id="gallery-tag">
+                Instalación 01
+              </span>
+<h3 class="font-headline-md text-headline-md uppercase tracking-tight text-on-surface font-bold" id="gallery-title">
+                Rótulo 'In my Kaos Era'
+              </h3>
+<p class="font-body-md text-body-md text-on-surface-variant" id="gallery-desc">
+                Letrero insignia que define la atmósfera de nuestro local en Leandro Valle. Acabado tipográfico sobre texturas neutras de concreto pulido.
+              </p>
+</div>
+<!-- Details metadata grid -->
+<div class="bg-surface-container-low p-4 rounded-lg flex flex-col gap-2 mt-6">
+<div class="flex justify-between items-center text-xs">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Ubicación</span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Salón Principal</span>
+</div>
+<div class="flex justify-between items-center text-xs">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Material</span>
+<span class="font-label-sm text-label-sm font-semibold text-on-surface">Capa Concreto &amp; Vinilo</span>
+</div>
+<div class="flex justify-between items-center text-xs">
+<span class="font-label-sm text-label-sm uppercase text-on-surface-variant">Comunidad</span>
+<span class="font-label-sm text-label-sm font-semibold text-primary">#InMyKaosEra</span>
+</div>
+</div>
+<!-- Quick Action button -->
+<button class="mt-6 w-full py-2.5 bg-surface-container text-on-surface font-label-md text-label-md uppercase tracking-wider font-bold rounded-lg hover:bg-secondary-container transition-colors flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-base">photo_camera</span>
+              Ver en Instagram (@kaos.oax)
+            </button>
+</div>
+</div>
+<!-- Thumbnails Ribbon -->
+<div class="grid grid-cols-5 gap-3 mt-6 pt-4 border-t-0">
+<!-- Thumb 0 -->
+<button class="gallery-thumb group relative rounded-lg overflow-hidden aspect-[4/3] ring-2 ring-primary-container transition-all" data-index="0">
+<img alt="Miniatura Rótulo Kaos Era" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBm1b_QqY9ziT9egz4Q4GbwOhYGt7no8Fmu8mMP0Bglxo4zJxOdQlPeM46fyUf_HxbLDCGPnTfnmhGaj5DhhOSUWs5eYZX7IMzeyp4Ir6J1beO0OuzXSYzu3a8dzcR18cAit0h6CVv84nBQ-NkmnK9eYGbOA9yOLYq7ReGDLHoeBluYZglT5ILQndJ7Uqmtxqch8c_B1STwHkjic5Ep-lMAyoQg-UG_hwxLsPeRGyuwLSEBA2RXKFdloQu4XQ7UYhs-SQ">
+<div class="absolute inset-0 bg-on-surface/20 group-hover:bg-transparent transition-colors"></div>
+<span class="absolute bottom-1 left-1.5 font-label-sm text-[9px] text-white font-bold drop-shadow uppercase hidden sm:inline">01. Rótulo</span>
+</button>
+<!-- Thumb 1 -->
+<button class="gallery-thumb group relative rounded-lg overflow-hidden aspect-[4/3] ring-0 opacity-70 hover:opacity-100 transition-all" data-index="1">
+<img alt="Miniatura Escultura Mascota" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9CiPTGkvSEoiuxckYHal-hI746LMxTRh8ASQKm3rQIR_wLtTB7AI96nLzWeXyJqLiSoJ26SJ0sRh-mNuh8SMypI50X1_-BWGL9eSoy5kKoNoFTlgJZ5IcY23AQCGthu_TbGclwU6nylxJiHR1mpMmtaTBtgznBJUxbSdSaE2QIsXa8zcludgssDAa_awuA5micCmNARcZZkAfMLwhqpGI1wSxJMtzSVqPKS7a7IPrtd8YPF-GMUcONouSrFRhDLNDlQ">
+<div class="absolute inset-0 bg-on-surface/20 group-hover:bg-transparent transition-colors"></div>
+<span class="absolute bottom-1 left-1.5 font-label-sm text-[9px] text-white font-bold drop-shadow uppercase hidden sm:inline">02. Mascota</span>
+</button>
+<!-- Thumb 2 -->
+<button class="gallery-thumb group relative rounded-lg overflow-hidden aspect-[4/3] ring-0 opacity-70 hover:opacity-100 transition-all" data-index="2">
+<img alt="Miniatura Packaging Táctil" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyWVt1XEiVsSA694jCCEmG44rmONLu9m0SjMSFhAbcdbohWkpabBImi_mY0rHP5WbJ8_X3jNO29KM8WItxgRQKbaihG-g2-QSTnXPaNQpUjLuHtY1oa5wNREeNX1LOxmgE57sGlH_JANDAWlSRaI-uKN3bpU_9LQwL2tv7aD_-47a987fzjBQFSqnrgMRuumxVqYL-WAZggj0KGj2filG2-vVZH81w7QgLJJogp_-3vGXO19grZmFpvBopI9ZbXT7Xpw">
+<div class="absolute inset-0 bg-on-surface/20 group-hover:bg-transparent transition-colors"></div>
+<span class="absolute bottom-1 left-1.5 font-label-sm text-[9px] text-white font-bold drop-shadow uppercase hidden sm:inline">03. Packaging</span>
+</button>
+<!-- Thumb 3 -->
+<button class="gallery-thumb group relative rounded-lg overflow-hidden aspect-[4/3] ring-0 opacity-70 hover:opacity-100 transition-all" data-index="3">
+<img alt="Miniatura Taro Royale" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBFWlePQtvOaLabcMM1wyzxbKZpOd9ynJNDw47QB_WaIwqnVX_3ATcEoC3R7Ocvo3aV1liGoPAnk0FbaBRXu3mbKfzM6yx4l2E8pYOzflQmBxvmdsxWtgzCIsax4pu76xYfX0vfjtLIA-Wfw1sq6S2FY2Z2Dbd8YdQlgyLY2sVW-_fVOlAOV4KAK5uSeOuL9Iu9LAi2KIzbdi0a0rROHtPj0N6QB-QNmmHCMZnoyfGRp7Kq1TS_OLd6klSigwPyrt4oHg">
+<div class="absolute inset-0 bg-on-surface/20 group-hover:bg-transparent transition-colors"></div>
+<span class="absolute bottom-1 left-1.5 font-label-sm text-[9px] text-white font-bold drop-shadow uppercase hidden sm:inline">04. Signature</span>
+</button>
+<!-- Thumb 4 -->
+<button class="gallery-thumb group relative rounded-lg overflow-hidden aspect-[4/3] ring-0 opacity-70 hover:opacity-100 transition-all" data-index="4">
+<img alt="Miniatura Juegos de Mesa y Comunidad" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVkg0m8w3WmI-4iR-nr7vho0Dl8ijYfyY4NZiK3QxDTi8A1e3hg4hEoL1Y21daLZ0He4YHYISj_bxmyzAuUa5rZkkVqNKT-Od622fxU721QJqPQEvOFj14jK0HElK7xxWu6qT3W0fJR7S0Y7gsTT7TdMPxK8QHoJvky6IYPw0Weynl9_G4jPBRhGv25-bjw_HmAeWC83mIuDHQT1KGwaBXKMdApZOmV7Wz5gE7ALi5kixGsri5OFAOtTQCuQR2vFF_Kw">
+<div class="absolute inset-0 bg-on-surface/20 group-hover:bg-transparent transition-colors"></div>
+<span class="absolute bottom-1 left-1.5 font-label-sm text-[9px] text-white font-bold drop-shadow uppercase hidden sm:inline">05. Comunidad</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: MENÚ ESENCIAL INTERACTIVO -->
+<section class="w-full max-w-[1360px] mx-auto px-6 lg:px-12 py-14" id="menu-section">
+<div class="flex flex-col gap-8">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<div class="inline-flex items-center gap-2 mb-1">
+<span class="w-2.5 h-2.5 bg-secondary-container rounded-sm"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary font-bold">Carta Seleccionada</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg uppercase tracking-tight text-on-surface font-bold">
+            Menú Esencial Kaos
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Elaborado con insumos frescos de Oaxaca, té ceremonial y perlas cocinadas cada mañana.</p>
+</div>
+<!-- Filter Tab Buttons -->
+<div class="flex flex-wrap items-center gap-2 p-1.5 bg-surface-container rounded-xl">
+<button class="menu-tab px-4 py-2 rounded-lg font-label-sm text-label-sm uppercase tracking-wider font-semibold transition-all bg-on-surface text-surface-container-lowest shadow-sm" data-filter="all">
+            Todos
+          </button>
+<button class="menu-tab px-4 py-2 rounded-lg font-label-sm text-label-sm uppercase tracking-wider font-semibold transition-all text-on-surface-variant hover:text-on-surface" data-filter="waffles">
+            Waffles de Autor
+          </button>
+<button class="menu-tab px-4 py-2 rounded-lg font-label-sm text-label-sm uppercase tracking-wider font-semibold transition-all text-on-surface-variant hover:text-on-surface" data-filter="boba">
+            Tapiocas &amp; Boba
+          </button>
+<button class="menu-tab px-4 py-2 rounded-lg font-label-sm text-label-sm uppercase tracking-wider font-semibold transition-all text-on-surface-variant hover:text-on-surface" data-filter="cafe">
+            Café &amp; +Cloudy
+          </button>
+<button class="menu-tab px-4 py-2 rounded-lg font-label-sm text-label-sm uppercase tracking-wider font-semibold transition-all text-on-surface-variant hover:text-on-surface" data-filter="bowls">
+            Bowls
+          </button>
+</div>
+</div>
+<!-- Menu Grid Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5" id="menu-items-grid">
+<!-- Item 1: Choco Kaos -->
+<div class="menu-item-card bg-surface-container-lowest p-4 rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between group" data-category="waffles">
+<div class="flex items-start gap-4">
+<div class="w-20 h-20 shrink-0 rounded-lg overflow-hidden bg-surface-container">
+<img alt="Waffle de autor Choco Kaos con chocolate oaxaqueño y toppings" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACg1vkO64GHtqgmyr8NPQSQwmIR0J7Jb65IqBqUhr6_NOf_F0wcz4-_8Y5OEwImB25ABFriaFF0oV6hHMsTZviZOTIdlodTYtEDBIkJj0Gnzkqxt0HXQ4Bj8_4XlyVaKtb2Fd9QdU1sqGLc9Mnx2dc2UgDYDTqe-ZLu7uUvX75Y6WBQ2CJhkj2-jtJWtcfy6YpYyF0pAbMfMv3IcsVHiPkeUYSrjW-wlFUtEhiLJUpbXyTQuwKKI-LKWwgT4GU3PTKuQ">
+</div>
+<div class="flex flex-col gap-1 min-w-0">
+<div class="flex items-center justify-between gap-2">
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface truncate">Choco Kaos</h4>
+<span class="font-headline-sm text-headline-sm font-extrabold text-primary-container shrink-0">$110</span>
+</div>
+<span class="font-label-sm text-[10px] uppercase tracking-wider text-secondary font-bold">Waffle de Autor</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Masa belga crujiente, ganache de cacao oaxaqueño 70%, crumble de galleta y fresas de huerto.</p>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between border-t-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Base crujiente artesanal</span>
+<button class="px-3 py-1.5 bg-surface-container hover:bg-secondary-container text-on-surface font-label-sm text-label-sm uppercase font-semibold rounded-lg transition-colors flex items-center gap-1" onclick="openPreviewModal('Choco Kaos', '$110', 'Waffle belga horneado al momento con cacao de los Valles Centrales, ganache intenso, crumble artesanal y fresas frescas. Una oda al chocolate de Oaxaca.', 'waffles')">
+<span class="">Detalles</span>
+<span class="material-symbols-outlined text-sm">visibility</span>
+</button>
+</div>
+</div>
+<!-- Item 2: Lotus Waffle -->
+<div class="menu-item-card bg-surface-container-lowest p-4 rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between group" data-category="waffles">
+<div class="flex items-start gap-4">
+<div class="w-20 h-20 shrink-0 rounded-lg overflow-hidden bg-surface-container">
+<img alt="Waffle Lotus Biscoff con crema caramelizada en Kaos Oaxaca" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBdNxqeBl98jraZJwXSrM4fa815t25ppsOgXCCMMQZ05fnUgrdWHN3kyKpD64uXLJXIhC2FPnBDgyr8RZUrBh9DxsZHyJLZMnTb6_i5zh6CVZpXDf1PLiqDSifUyKq0mDK5U0ZZsz_UDAcAK1xhFrWHnx9YOCglJUyDJH4kdZVUpBw_iNJHWXPrTPqVtRPf6mCq0B6Lrh3hiw7Y-yT-tAtrHMBy2uSEL0skzGWUCLdWfXoWL8Ltor1pEUjXmIyfojy3ZA">
+</div>
+<div class="flex flex-col gap-1 min-w-0">
+<div class="flex items-center justify-between gap-2">
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface truncate">Lotus Biscoff</h4>
+<span class="font-headline-sm text-headline-sm font-extrabold text-primary-container shrink-0">$110</span>
+</div>
+<span class="font-label-sm text-[10px] uppercase tracking-wider text-secondary font-bold">Waffle de Autor</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Crema Biscoff caramelizada, galleta triturada, toque de canela y helado artesanal de vainilla.</p>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between border-t-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Top seller dulce</span>
+<button class="px-3 py-1.5 bg-surface-container hover:bg-secondary-container text-on-surface font-label-sm text-label-sm uppercase font-semibold rounded-lg transition-colors flex items-center gap-1" onclick="openPreviewModal('Lotus Biscoff', '$110', 'Preparado con crema speculoos Lotus, galletas crujientes doradas y bola de helado de vainilla infusionada con vainas de Papantla.', 'waffles')">
+<span class="">Detalles</span>
+<span class="material-symbols-outlined text-sm">visibility</span>
+</button>
+</div>
+</div>
+<!-- Item 3: Taro Creme Brûlée -->
+<div class="menu-item-card bg-surface-container-lowest p-4 rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between group" data-category="boba">
+<div class="flex items-start gap-4">
+<div class="w-20 h-20 shrink-0 rounded-lg overflow-hidden bg-surface-container">
+<img alt="Taro Creme Brûlée Bubble Tea con perlas de tapioca y azúcar caramelizada" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAF8UVPjCSzrZJ6St-LqgpsIDXktUuK2z-C9Fp5W60KT4SQwkNVgeo93_nLlHOQQevPSGSduFrzYX0qLNS0S2h5E8PMGi9p2n6DA7liHYmdU9hPzaV3uzNvFeWtCygZkZTL5rdY5hVvOZWRtLzHGfUoLLA4wmdo7lRiPe1Yi63unU-HRX9ci2gy9oNxwwqNw5IakgocBVpDRtMfGZ-a1-j0KSkgYhEMgk1IkNxyxNkoB0c6m8soFFuHZrzZr3ve_X7LTg">
+</div>
+<div class="flex flex-col gap-1 min-w-0">
+<div class="flex items-center justify-between gap-2">
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface truncate">Taro Creme Brûlée</h4>
+<span class="font-headline-sm text-headline-sm font-extrabold text-primary-container shrink-0">$90</span>
+</div>
+<span class="font-label-sm text-[10px] uppercase tracking-wider text-primary font-bold">Bubble Tea Signature</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Taro natural cremoso, tapioca negra recién cocida en piloncillo y costra de azúcar flameada al soplete.</p>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between border-t-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Incluye perlas negras</span>
+<button class="px-3 py-1.5 bg-surface-container hover:bg-secondary-container text-on-surface font-label-sm text-label-sm uppercase font-semibold rounded-lg transition-colors flex items-center gap-1" onclick="openPreviewModal('Taro Creme Brûlée', '$90', 'El bubble tea más icónico de Kaos: taro raíz natural, leche cremosa, tapiocas suaves y la costra crocante de creme brûlée recién sopleteada.', 'boba')">
+<span class="">Detalles</span>
+<span class="material-symbols-outlined text-sm">visibility</span>
+</button>
+</div>
+</div>
+<!-- Item 4: Blue Matcha -->
+<div class="menu-item-card bg-surface-container-lowest p-4 rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between group" data-category="cafe">
+<div class="flex items-start gap-4">
+<div class="w-20 h-20 shrink-0 rounded-lg overflow-hidden bg-surface-container">
+<img alt="Blue Matcha latte con Butterfly Pea Flower" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDOtQgVD9tq-InnXbIHbguIsp-jnVySNJP15PG8AUw1IKZLnrgdClkpuE_geeUClnX_66PD8nBe33JdiBkq0Lav9BzNPuvukXMWzdJezlkfOQsWOpgqHUfU8MvLC7xRG5xqZ0s6Z7vnP7g19YvIJMcbCO7GLW3eqAN3YQt6ktgm9ViDvwu1oYfms-R_bglxvhyHpPIsDcFgx-_WtRSsh2L8SqW-0yIVmieRPqRH-4eWFFZRXV9ZcCiK2rM2Y5qkvU-woA">
+</div>
+<div class="flex flex-col gap-1 min-w-0">
+<div class="flex items-center justify-between gap-2">
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface truncate">Blue Matcha</h4>
+<span class="font-headline-sm text-headline-sm font-extrabold text-primary-container shrink-0">$70</span>
+</div>
+<span class="font-label-sm text-[10px] uppercase tracking-wider text-primary font-bold">Specialty Herbal</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Infusión vibrante de Butterfly Pea Flower, leche vegetal texturizada y notas florales suaves y antioxidantes.</p>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between border-t-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">100% Sin cafeína</span>
+<button class="px-3 py-1.5 bg-surface-container hover:bg-secondary-container text-on-surface font-label-sm text-label-sm uppercase font-semibold rounded-lg transition-colors flex items-center gap-1" onclick="openPreviewModal('Blue Matcha', '$70', 'Elaborado con polvo fino de flor de guisante mariposa (butterfly pea). Color azul natural intenso, leche sedosa y toque de miel de agave silvestre.', 'cafe')">
+<span class="">Detalles</span>
+<span class="material-symbols-outlined text-sm">visibility</span>
+</button>
+</div>
+</div>
+<!-- Item 5: Línea +Cloudy -->
+<div class="menu-item-card bg-surface-container-lowest p-4 rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between group" data-category="cafe">
+<div class="flex items-start gap-4">
+<div class="w-20 h-20 shrink-0 rounded-lg overflow-hidden bg-surface-container">
+<img alt="Café frío de especialidad con capa densa de crema +Cloudy espumosa" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALuwTqL7TWZmGbOYKlxG3p8wXP7VzS2VuA4eGzC2W7CItWK1E92QT02OfyUpAcavcvSUx1eGxup5FSU8uHgNrry1BU2lzxSj9u074HMIVnBL_NHRcAfibfMx1kp-D_Grj_uA6eSTLOb5NjRLWt0_ASHp4SRXHhE0nbPq9D9gQIIZ_ijs-KxGhJeLtE1BqXwZlPCGz3_g8wAHVp_UFXK1iYCdeMpUO2twoQIpSoRx57ajAfuzuVUtOYtacVratrGhwDww">
+</div>
+<div class="flex flex-col gap-1 min-w-0">
+<div class="flex items-center justify-between gap-2">
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface truncate">Línea +Cloudy</h4>
+<span class="font-headline-sm text-headline-sm font-extrabold text-primary-container shrink-0">$80</span>
+</div>
+<span class="font-label-sm text-[10px] uppercase tracking-wider text-secondary font-bold">Cold Foam Specialty</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Cold Brew Pluma Hidalgo coronado con cold foam de queso crema salado o vainilla francesa sedosa.</p>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between border-t-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Extracción fría 18h</span>
+<button class="px-3 py-1.5 bg-surface-container hover:bg-secondary-container text-on-surface font-label-sm text-label-sm uppercase font-semibold rounded-lg transition-colors flex items-center gap-1" onclick="openPreviewModal('Línea +Cloudy', '$80', 'Extracción en frío lenta durante 18 horas de café de Pluma Hidalgo, Oaxaca, con una espesa y suave nube espumosa salada en la superficie.', 'cafe')">
+<span class="">Detalles</span>
+<span class="material-symbols-outlined text-sm">visibility</span>
+</button>
+</div>
+</div>
+<!-- Item 6: Bowls Kaos -->
+<div class="menu-item-card bg-surface-container-lowest p-4 rounded-xl shadow-sm hover:shadow-md transition-all flex flex-col justify-between group" data-category="bowls">
+<div class="flex items-start gap-4">
+<div class="w-20 h-20 shrink-0 rounded-lg overflow-hidden bg-surface-container">
+<img alt="Bowl de açai y superfoods con frutas tropicales en Kaos Oaxaca" class="w-full h-full object-cover group-hover:scale-105 transition-transform" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjJuY_y0qdPPdS_aifqhdXLtULKycmPHbsRdgv9XaQnW87EhH0uchjdgXyvYuuqXk4u5Nl0bXlV-ZVdcZ_1BlQr_sy2dMd3P4lFXvFmzIuyjfCbmXWUoWrfB4ZIylIAAeLCUGy3ff6SrJ0qQrDgB3OarHpotiIoZ0_ZrNwUd1FWn_1NZji2NINLWZpaxf6X5jpeQmPjCf9CqNt5GTtGF79iB__r56ra2FMtl3tRnK6U5kwtKlCDvsvjXevhODOLYji4g">
+</div>
+<div class="flex flex-col gap-1 min-w-0">
+<div class="flex items-center justify-between gap-2">
+<h4 class="font-headline-sm text-headline-sm font-bold text-on-surface truncate">Bowls Energéticos</h4>
+<span class="font-headline-sm text-headline-sm font-extrabold text-primary-container shrink-0">$125</span>
+</div>
+<span class="font-label-sm text-[10px] uppercase tracking-wider text-secondary font-bold">Superfoods Frescos</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">Base de pitahaya orgánica o açai amazónico, granola crocante de la casa, chía, plátano y fresas.</p>
+</div>
+</div>
+<div class="mt-4 pt-3 flex items-center justify-between border-t-0">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Opción Vegana / Nutritiva</span>
+<button class="px-3 py-1.5 bg-surface-container hover:bg-secondary-container text-on-surface font-label-sm text-label-sm uppercase font-semibold rounded-lg transition-colors flex items-center gap-1" onclick="openPreviewModal('Bowls Energéticos', '$125', 'Selección de bases frutales puras sin azúcares añadidos: Pitahaya o Açai, coronados con granola tostada con miel oaxaqueña, fruta fresca y nibs de cacao.', 'bowls')">
+<span class="">Detalles</span>
+<span class="material-symbols-outlined text-sm">visibility</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Tactile note / Customizer trigger -->
+<div class="bg-surface-container p-6 rounded-xl flex flex-col gap-5"><div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4"><div class="flex items-center gap-4"><div class="w-10 h-10 rounded-full bg-secondary-container text-on-surface flex items-center justify-center font-bold shrink-0"><span class="material-symbols-outlined">tune</span></div><div><h4 class="font-headline-sm text-headline-sm font-bold text-on-surface">Personaliza tus Niveles</h4><p class="font-body-sm text-body-sm text-on-surface-variant">Selecciona tu nivel de dulzor, hielo y base preferida para tu pedido en barra o para llevar.</p></div></div><a class="shrink-0 px-5 py-2.5 bg-on-surface text-surface-container-lowest font-label-md text-label-md uppercase tracking-wider font-semibold rounded-lg hover:bg-primary-container transition-colors" data-path="pedidos-en-linea" href="#">Ordenar Personalizado</a></div><div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 pt-2 border-t border-surface-container-high"><div class="flex flex-col gap-2"><span class="font-label-sm text-label-sm uppercase font-bold text-on-surface tracking-wider flex items-center gap-1.5"><span class="material-symbols-outlined text-sm text-primary">water_drop</span> Dulzor:</span><div class="flex items-center gap-2"><button type="button" class="level-selector-btn sweetness-btn px-3 py-1.5 rounded-lg font-label-sm text-xs font-semibold uppercase tracking-wider transition-all bg-surface-container-lowest text-on-surface-variant hover:text-on-surface" data-type="sweetness" data-val="0" onclick="setSelection(this, 'sweetness')">0%</button><button type="button" class="level-selector-btn sweetness-btn px-3 py-1.5 rounded-lg font-label-sm text-xs font-semibold uppercase tracking-wider transition-all bg-surface-container-lowest text-on-surface-variant hover:text-on-surface" data-type="sweetness" data-val="30" onclick="setSelection(this, 'sweetness')">30%</button><button type="button" class="level-selector-btn sweetness-btn px-3 py-1.5 rounded-lg font-label-sm text-xs font-semibold uppercase tracking-wider transition-all bg-on-surface text-secondary-container shadow-sm" data-type="sweetness" data-val="50" onclick="setSelection(this, 'sweetness')">50% Regular</button><button type="button" class="level-selector-btn sweetness-btn px-3 py-1.5 rounded-lg font-label-sm text-xs font-semibold uppercase tracking-wider transition-all bg-surface-container-lowest text-on-surface-variant hover:text-on-surface" data-type="sweetness" data-val="100" onclick="setSelection(this, 'sweetness')">100%</button></div></div><div class="flex flex-col gap-2"><span class="font-label-sm text-label-sm uppercase font-bold text-on-surface tracking-wider flex items-center gap-1.5"><span class="material-symbols-outlined text-sm text-primary">ac_unit</span> Nivel de Hielo:</span><div class="flex items-center gap-2"><button type="button" class="level-selector-btn ice-btn px-3 py-1.5 rounded-lg font-label-sm text-xs font-semibold uppercase tracking-wider transition-all bg-surface-container-lowest text-on-surface-variant hover:text-on-surface" data-type="ice" data-val="sin" onclick="setSelection(this, 'ice')">Sin Hielo</button><button type="button" class="level-selector-btn ice-btn px-3 py-1.5 rounded-lg font-label-sm text-xs font-semibold uppercase tracking-wider transition-all bg-surface-container-lowest text-on-surface-variant hover:text-on-surface" data-type="ice" data-val="poco" onclick="setSelection(this, 'ice')">Poco</button><button type="button" class="level-selector-btn ice-btn px-3 py-1.5 rounded-lg font-label-sm text-xs font-semibold uppercase tracking-wider transition-all bg-on-surface text-secondary-container shadow-sm" data-type="ice" data-val="regular" onclick="setSelection(this, 'ice')">Regular</button></div></div><div class="flex flex-col gap-2"><span class="font-label-sm text-label-sm uppercase font-bold text-on-surface tracking-wider flex items-center gap-1.5"><span class="material-symbols-outlined text-sm text-primary">local_cafe</span> Tipo de Leche:</span><div class="flex items-center gap-2"><button type="button" class="level-selector-btn milk-btn px-3 py-1.5 rounded-lg font-label-sm text-xs font-semibold uppercase tracking-wider transition-all bg-on-surface text-secondary-container shadow-sm" data-type="milk" data-val="entera" onclick="setSelection(this, 'milk')">Entera</button><button type="button" class="level-selector-btn milk-btn px-3 py-1.5 rounded-lg font-label-sm text-xs font-semibold uppercase tracking-wider transition-all bg-surface-container-lowest text-on-surface-variant hover:text-on-surface" data-type="milk" data-val="avena" onclick="setSelection(this, 'milk')">Avena</button><button type="button" class="level-selector-btn milk-btn px-3 py-1.5 rounded-lg font-label-sm text-xs font-semibold uppercase tracking-wider transition-all bg-surface-container-lowest text-on-surface-variant hover:text-on-surface" data-type="milk" data-val="deslac" onclick="setSelection(this, 'milk')">Deslactosada</button></div></div></div></div>
+</div>
+</section>
+<!-- SECTION 4: ALIANZA BLAISE PASCALE & VIBE CREATIVO -->
+<section class="w-full bg-surface-container-high py-12 lg:py-16">
+<div class="max-w-[1360px] mx-auto px-6 lg:px-12">
+<div class="bg-surface-container-lowest rounded-2xl overflow-hidden shadow-sm grid grid-cols-1 lg:grid-cols-12">
+<!-- Left Side: Editorial Content -->
+<div class="lg:col-span-7 p-8 lg:p-12 flex flex-col justify-between gap-8">
+<div class="flex flex-col gap-4">
+<!-- Collab Tag -->
+<div class="flex items-center gap-3">
+<span class="px-3 py-1 bg-secondary-container text-on-surface font-label-sm text-label-sm uppercase tracking-widest font-bold rounded-full">
+                Colaboración Oficial
+              </span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">
+                Blaise Studio × Kaos
+              </span>
+</div>
+<!-- Title & Concept -->
+<h2 class="font-headline-lg text-headline-lg uppercase tracking-tight text-on-surface font-extrabold leading-tight">
+              Donde el Café se Encuentra con el Diseño &amp; el Juego.
+            </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+              Creamos un refugio para estudiantes creativos, arquitectos y nómadas digitales en Oaxaca. Nuestra alianza con el estudio de diseño y arquitectura <strong class="text-on-surface font-semibold">@blaisepascale</strong> activa beneficios exclusivos y noches comunitarias.
+            </p>
+<!-- Feature Bullet Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
+<div class="bg-surface-container-low p-4 rounded-xl flex flex-col gap-1.5">
+<div class="flex items-center gap-2 text-primary-container">
+<span class="material-symbols-outlined text-xl">percent</span>
+<span class="font-label-md text-label-md uppercase font-bold text-on-surface">15% en Barra</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Presenta tu credencial Blaise Studio o código de colaborador y obtén descuento directo en toda la carta de bebidas.
+                </p>
+</div>
+<div class="bg-surface-container-low p-4 rounded-xl flex flex-col gap-1.5">
+<div class="flex items-center gap-2 text-secondary">
+<span class="material-symbols-outlined text-xl">casino</span>
+<span class="font-label-md text-label-md uppercase font-bold text-on-surface">Tardes de Juegos</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+                  Uno, Conecta 4, Jenga y Scrabble disponibles sin costo. Mesas amplias, enchufes y WiFi de 200 Mbps para sesiones productivas.
+                </p>
+</div>
+</div>
+</div>
+<!-- Bottom Micro Identity -->
+<div class="flex items-center justify-between pt-4 border-t-0">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-on-surface text-secondary-container flex items-center justify-center font-bold">
+<span class="material-symbols-outlined text-base">groups</span>
+</div>
+<div>
+<span class="font-label-sm text-label-sm uppercase font-bold text-on-surface block">Comunidad Kaos &amp; Blaise</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Leandro Valle #310 • Oaxaca</span>
+</div>
+</div>
+<a class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold hover:underline flex items-center gap-1" href="https://instagram.com/blaisepascale" rel="noopener noreferrer" target="_blank">
+<span class="">@blaisepascale</span>
+<span class="material-symbols-outlined text-sm">open_in_new</span>
+</a>
+</div>
+</div>
+<!-- Right Side: Graphic Visual Split -->
+<div class="lg:col-span-5 relative bg-surface-container flex items-center justify-center overflow-hidden min-h-[360px] lg:min-h-full">
+<img alt="Comunidad joven jugando Uno y Conecta 4 en Kaos Coffee Shop Oaxaca" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDc9tbiODrpwxv23RGIWxnufsNC6hV27vTL_jOue8kFnm3iWtCvBn4JAeg2fG3Ysz8xG6irRw41RPHOnheXE9le4Xi9xre1eRyOaxUSBTlTDVjTBiBAp-rdrTbAZ796Tcwq2f5T54_3CyyQhSd-XKuAPzdicwcsADX4sVh82cptt8GYMbYom0ZPPz4H_oBV6ppvlajvB9Wg54gomROXOPpeHauOvSMx2VLYHDuZwgTGUs1eEXmNb8dHeOjY9eMZtCsOog">
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/70 via-transparent to-transparent lg:hidden"></div>
+<div class="absolute bottom-4 left-4 right-4 bg-on-surface/90 backdrop-blur-md p-4 rounded-xl text-white flex items-center justify-between">
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm text-secondary-container uppercase tracking-wider font-bold">Atmósfera</span>
+<span class="font-headline-sm text-headline-sm font-semibold">Tardes de Juegos &amp; Café</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-lowest/20 px-2.5 py-1 rounded-full text-white font-label-sm text-xs">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span class="">Todos los días</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 5: UBICACIÓN, HORARIOS & DELIVERY -->
+<section class="w-full max-w-[1360px] mx-auto px-6 lg:px-12 py-12 lg:py-16" id="ubicacion-section">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch">
+<!-- Left: Stylized Location & Delivery Card -->
+<div class="lg:col-span-6 flex flex-col justify-between bg-surface-container-lowest p-8 rounded-2xl shadow-sm gap-8">
+<!-- Header Info -->
+<div class="flex flex-col gap-3">
+<div class="inline-flex items-center gap-2">
+<span class="w-2.5 h-2.5 bg-primary-container rounded-sm"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary-container font-semibold">Coordenadas del Spot</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg uppercase tracking-tight text-on-surface font-extrabold">
+            En el Corazón de Oaxaca
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            Ubicados estratégicamente a solo 4 cuadras del Zócalo de la ciudad y 3 cuadras del Mercado 20 de Noviembre. Un oasis de calma con aire acondicionado y diseño moderno.
+          </p>
+</div>
+<!-- Address Badge Box -->
+<div class="bg-surface-container-low p-4 rounded-xl flex items-start gap-4">
+<div class="w-10 h-10 rounded-lg bg-primary-container text-white flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-xl">location_on</span>
+</div>
+<div class="flex flex-col min-w-0">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">Leandro Valle #310</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Centro Histórico, 68000 Oaxaca de Juárez, Oax.</span>
+<span class="font-label-sm text-label-sm text-secondary font-bold uppercase mt-1">A 400m de la Plaza de Armas</span>
+</div>
+</div>
+<!-- Horarios Sintetizados -->
+<div class="flex flex-col gap-2.5">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-bold">Horarios de Barra:</span>
+<div class="space-y-2">
+<div class="flex items-center justify-between p-3 bg-surface-container rounded-lg">
+<span class="font-label-sm text-label-sm uppercase font-semibold text-on-surface">Lunes a Viernes</span>
+<span class="font-label-sm text-label-sm font-bold text-primary-container">8:30 a.m. – 8:30 p.m.</span>
+</div>
+<div class="flex items-center justify-between p-3 bg-surface-container rounded-lg">
+<span class="font-label-sm text-label-sm uppercase font-semibold text-on-surface">Sábados</span>
+<span class="font-label-sm text-label-sm font-bold text-primary-container">10:00 a.m. – 8:30 p.m.</span>
+</div>
+<div class="flex items-center justify-between p-3 bg-surface-container rounded-lg">
+<span class="font-label-sm text-label-sm uppercase font-semibold text-on-surface">Domingos</span>
+<span class="font-label-sm text-label-sm font-bold text-primary-container">11:00 a.m. – 7:30 p.m.</span>
+</div>
+</div>
+</div>
+<!-- Delivery Shortcuts Directos -->
+<div class="flex flex-col gap-3 pt-2">
+<span class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-bold">Pide a Domicilio:</span>
+<div class="grid grid-cols-3 gap-3">
+<a class="p-3 bg-surface-container hover:bg-secondary-container hover:text-on-surface rounded-lg text-center transition-all flex flex-col items-center justify-center gap-1 group" href="https://www.ubereats.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-lg text-on-surface">delivery_dining</span>
+<span class="font-label-sm text-label-sm uppercase font-bold text-on-surface">Uber Eats</span>
+</a>
+<a class="p-3 bg-surface-container hover:bg-secondary-container hover:text-on-surface rounded-lg text-center transition-all flex flex-col items-center justify-center gap-1 group" href="https://www.rappi.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-lg text-on-surface">moped</span>
+<span class="font-label-sm text-label-sm uppercase font-bold text-on-surface">Rappi</span>
+</a>
+<a class="p-3 bg-secondary-container text-on-surface rounded-lg text-center shadow-[2px_2px_0px_#191c1d] active:translate-x-[1px] active:translate-y-[1px] active:shadow-none transition-all flex flex-col items-center justify-center gap-1" href="https://wa.me/529510000000" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-lg">chat</span>
+<span class="font-label-sm text-label-sm uppercase font-bold">WhatsApp Directo</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Right: Interactive Map Viewport -->
+<div class="lg:col-span-6 flex flex-col rounded-2xl overflow-hidden bg-surface-container-lowest shadow-sm">
+<!-- Map element using data-location -->
+<div class="w-full h-80 lg:h-[420px] bg-cover bg-center relative" data-location="Leandro Valle 310, Centro, Oaxaca de Juárez, Mexico" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCYq6OQitZhuMkn3u6iNghLdqXwARdvXDQVzck0jmk0ruqbbNmcfEkumevs351OCC4lny3mnkO13F3SkUdLTJLVI9zJbyybtovEYhWvA9VR1nDGgt-RyEiwrgfQECIbafD1w9GvyLvSMPFr49BDq9liKcr1s6su75EVRRGtLe2Yv7P2CQ0Jqw3Rscgn20fXzPbZ8lweu0LXNE4dTYNLLi9S2YUn1XhHkpZ0XGOGW1nKy9nsrLMSuOh4')">
+<div class="absolute inset-0 bg-on-surface/10 pointer-events-none"></div>
+<!-- Tactile Map Marker Overlay -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-on-surface text-secondary-container px-4 py-2 rounded-xl shadow-xl flex items-center gap-2.5">
+<div class="w-3 h-3 rounded-full bg-secondary-container animate-ping"></div>
+<div class="flex flex-col">
+<span class="font-label-sm text-label-sm uppercase font-bold text-white tracking-widest leading-tight">KAOS OAXACA</span>
+<span class="font-body-sm text-[11px] text-surface-container-highest">Leandro Valle #310</span>
+</div>
+<div class="flex items-center gap-0.5 bg-secondary-container px-1 py-0.5 rounded-full ml-1">
+<span class="w-1.5 h-0.5 bg-on-surface rounded-full"></span>
+<span class="w-1.5 h-0.5 bg-on-surface rounded-full"></span>
+</div>
+</div>
+<!-- Bottom floating quick button -->
+<div class="absolute bottom-4 right-4">
+<a class="px-4 py-2 bg-surface-container-lowest text-on-surface font-label-sm text-label-sm uppercase tracking-wider font-bold rounded-lg shadow-md hover:bg-surface transition-colors flex items-center gap-1.5" href="https://maps.google.com/?q=Leandro+Valle+310+Oaxaca" rel="noopener noreferrer" target="_blank">
+<span class="">Abrir en Google Maps</span>
+<span class="material-symbols-outlined text-sm text-primary">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Walk Guide info bar below map -->
+<div class="p-6 bg-surface-container flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-2xl text-primary">directions_walk</span>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md uppercase font-bold text-on-surface">Ruta peatonal rápida</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Caminata de 5 minutos desde el Templo de la Compañía de Jesús.</span>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<span class="px-3 py-1 bg-surface-container-lowest rounded-full font-label-sm text-label-sm uppercase font-semibold text-on-surface">Pet Friendly</span>
+<span class="px-3 py-1 bg-surface-container-lowest rounded-full font-label-sm text-label-sm uppercase font-semibold text-on-surface">AC Free</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- QUICK PREVIEW MODAL INTERACTIVO -->
+<div id="gallery-lightbox-modal" class="fixed inset-0 z-50 bg-on-surface/90 backdrop-blur-xl hidden items-center justify-center p-4 sm:p-8"><div class="relative max-w-5xl w-full max-h-[92vh] flex flex-col items-center justify-center"><button aria-label="Cerrar pantalla completa" class="absolute -top-12 right-0 sm:top-2 sm:right-2 z-10 w-10 h-10 rounded-full bg-surface-container-highest/20 hover:bg-surface-container-highest/40 text-white flex items-center justify-center transition-all" onclick="closeGalleryLightbox()"><span class="material-symbols-outlined text-2xl">close</span></button><div class="w-full max-h-[72vh] overflow-hidden rounded-xl bg-on-surface/40 flex items-center justify-center shadow-2xl"><img id="lightbox-img" src="" alt="" class="max-w-full max-h-[72vh] object-contain rounded-lg"></div><div class="w-full mt-4 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 px-2 text-white"><div class="flex flex-col gap-1"><div class="flex items-center gap-2"><span id="lightbox-badge" class="px-2 py-0.5 rounded text-[10px] font-label-sm uppercase font-bold tracking-widest bg-secondary-container text-on-surface">Tipografía</span><span id="lightbox-tag" class="text-xs font-label-sm uppercase tracking-wider text-surface-container-highest">Instalación 01</span></div><h4 id="lightbox-title" class="font-headline-sm text-headline-sm font-bold tracking-tight text-white">Título</h4><p id="lightbox-desc" class="font-body-sm text-body-sm text-surface-container-highest max-w-2xl">Descripción detallada</p></div><div class="flex items-center gap-2 shrink-0"><button aria-label="Anterior foto" class="w-9 h-9 rounded-lg bg-surface-container-lowest/10 hover:bg-surface-container-lowest/20 text-white flex items-center justify-center transition-all" onclick="prevLightboxSlide()"><span class="material-symbols-outlined text-lg">chevron_left</span></button><span id="lightbox-counter" class="font-label-sm text-label-sm text-secondary-container font-bold px-2">01 / 05</span><button aria-label="Siguiente foto" class="w-9 h-9 rounded-lg bg-surface-container-lowest/10 hover:bg-surface-container-lowest/20 text-white flex items-center justify-center transition-all" onclick="nextLightboxSlide()"><span class="material-symbols-outlined text-lg">chevron_right</span></button></div></div></div></div><div class="fixed inset-0 z-50 bg-on-surface/60 backdrop-blur-sm hidden items-center justify-center p-4" id="item-modal">
+<div class="bg-surface-container-lowest w-full max-w-lg rounded-2xl p-6 sm:p-8 shadow-2xl relative flex flex-col gap-6">
+<!-- Close button -->
+<button aria-label="Cerrar modal" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-surface-container text-on-surface flex items-center justify-center hover:bg-surface-container-highest transition-colors" onclick="closePreviewModal()">
+<span class="material-symbols-outlined text-lg">close</span>
+</button>
+<!-- Modal Category & Title -->
+<div class="flex flex-col gap-1 pr-8">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-secondary font-bold" id="modal-category">Categoría</span>
+</div>
+<div class="flex items-center justify-between gap-4 mt-1">
+<h3 class="font-headline-md text-headline-md uppercase tracking-tight text-on-surface font-extrabold" id="modal-title">Producto</h3>
+<span class="font-headline-md text-headline-md font-bold text-primary-container" id="modal-price">$00</span>
+</div>
+</div>
+<!-- Modal Description -->
+<p class="font-body-md text-body-md text-on-surface-variant" id="modal-desc">
+        Descripción detallada del insumo seleccionado, origen de ingredientes y maridaje recomendado.
+      </p>
+<!-- Customization options preview -->
+<div class="bg-surface-container-low p-4 rounded-xl flex flex-col gap-3">
+<span class="font-label-sm text-label-sm uppercase font-bold text-on-surface tracking-wider">Opciones sugeridas en barra:</span>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1 bg-surface-container-lowest rounded-full font-label-sm text-xs font-medium text-on-surface">Leche Entera / Avena</span>
+<span class="px-3 py-1 bg-surface-container-lowest rounded-full font-label-sm text-xs font-medium text-on-surface">Dulzura 50%</span>
+<span class="px-3 py-1 bg-surface-container-lowest rounded-full font-label-sm text-xs font-medium text-on-surface">Extra Boba +$15</span>
+</div>
+</div>
+<!-- Action Footer -->
+<div class="flex items-center justify-end gap-3 pt-2">
+<button class="px-5 py-2.5 rounded-lg bg-surface-container font-label-md text-label-md uppercase font-semibold text-on-surface hover:bg-surface-container-high transition-colors" onclick="closePreviewModal()">
+          Cerrar
+        </button>
+<a class="px-6 py-2.5 rounded-lg bg-secondary-container font-label-md text-label-md uppercase tracking-wider font-bold text-on-surface shadow-[2px_2px_0px_#191c1d] active:translate-x-[1px] active:translate-y-[1px] transition-all" data-path="pedidos-en-linea" href="#">
+          Pedir en Barra
+        </a>
+</div>
+</div>
+</div>
+<!-- SCRIPT INTERACTIVO: Galería, Tabs de Menú y Modal -->
+<script>
+    // 1. Data de la Galería de Artes
+    const galleryItems = [
+      {
+        src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCwlLII7hRNmRN0PJC6EY_sEMfNlFLpEPFdPZxZDAFmWMHCb4AnIF9ZIcfVDG01MluYqP7FI2OI-XrHbQ43UdsX9pmj22wybF3H68QPJelVQz634UVgtbxL06xWXur1M8r0oOzBle76C8L7cH6J1ZMEtnLTvops3FYOfIU2Jn1C7gWjLO3uJgghORuB7Mq8jVSqX-mP6nzT9qJE1RtKHnevLUB8yXIKZ3cEzpJbbnQ75F5a_7JnlWKSjN1rK9JGCqmn6A',
+        alt: "Rótulo In my Kaos Era en muro de concreto dentro de Kaos Coffee Shop",
+        tag: 'Instalación 01',
+        title: "Rótulo 'In my Kaos Era'",
+        badge: 'Tipografía & Muro',
+        desc: 'Letrero insignia que define la atmósfera de nuestro local en Leandro Valle. Acabado tipográfico sobre texturas neutras de concreto pulido.'
+      },
+      {
+        src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCg3c1Fp_R6q8Yp2_W5mbJWkoTFIwWz5b_eDVz7irb6KPbfKp7atX2fKHGPicpFBMynR9nxNidR2AiDMRJpaLhItvIpoJS4-6TZhjBfHPlNSu-X3c7efbT7ocn2mBL_7pZIP--yWQ2YzTFAP_UQMsHwZWxu_6p3T9mGRE479yDNRV-TctYmWeKQQ0QbNbU93eJl3eZFxW-QMTnWzistYXb8tz0T0HT8YsW8il5vccVMaE05XW4_7WQVgQYa7KsepS0jvg',
+        alt: "Escultura Mascota Kaos en alto relieve sobre concreto",
+        tag: 'Pieza Escultórica',
+        title: 'Escultura Mascota Kaos',
+        badge: 'Mascot Badge',
+        desc: 'La mirada gemela emblemática plasmada en alto relieve volumétrico. El centro fotográfico para quienes visitan nuestro espacio en Oaxaca.'
+      },
+      {
+        src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAy8Xr5QaW8wkoyJygB4pO_gG-AQNEQIRjLoeKLvuu7x3qGCj5OV-aIx5rGWD5k3x_fchrdvPLTWYR5aD0bSX1-CIYgHBtJWhZgkG2mmUjQasQDHPGZ4CzuwvAsfRqEkH5AFV-qAtXWgOdAM6ASwLUqya84OOFhFdCQnHibefXvmRVEoBOafDSny8eY2YJWbELkShlCMSw5YR1QW9AHd6i-jaTCV4pJ3QlyUFvIbH5Nkq769sCC-qQxyhN00dE3OWXb5w',
+        alt: "Packaging táctil Rompe Aquí de Kaos Coffee Shop",
+        tag: 'Diseño Táctil',
+        title: "Packaging Táctil 'Rompe Aquí'",
+        badge: 'Editorial Bag',
+        desc: 'Nuestra experiencia para llevar: sellos fluorescentes de seguridad, tipografía técnica brutalista y un ritual de apertura sensorial único.'
+      },
+      {
+        src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCqGt-qjeng_Ivi5tsSAVGBO0WxeJQskVVd2McXNCk89UQ_4yJpnybkwnB4QUHJNno4IjQY6i6Wmd6n6EskVanPsWDLN-wFCNe1naoYnot9mk4Zep0ty4yTYS1mlDSMeGWE0rtVJ1ZGoqIGaLASliSwG2w7ALu3iylvBZu5HzSR6H-0CGWRG24tsbIg9zRgn5I16FRGdZYA4Qb75CXhInETmCc6v6tZrCxwgC0Nr4I3Aqs-E1eHZlznz2l0WIoS5Nz1KQ',
+        alt: "Vaso de Taro Royale y Tapiocas Signature de Kaos",
+        tag: 'Signature Drink',
+        title: 'Taro Royale Boba',
+        badge: 'Boba Especialidad',
+        desc: 'Perlas de tapioca cocidas artesanalmente en piloncillo todos los días a primera hora, leche texturizada y taro natural con notas de vainilla.'
+      },
+      {
+        src: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAGD-2sz5HA6hllHEULiiJ5pUl0i7FDZhww8-bOgI5ci7Bafg6pvtehRz30qzakq5SYMS_3yGWsoHAqX4kazDxwZaMDmHF3HjR1Vz5pyaq1jJy-_asIy_csUDM6dfm6Tw5IjIze8csFQ1StshBB4R7pbFzVfHj8YbhSVfhmAkqvk7R7z7b2AfwFEy-pMbwW1JgE-juTUhbnR9YLnJuEobFmar61_VAor8vQaJZrF4pjz1thhonOtBVj8gGnoUIz2RxT4A',
+        alt: "Comunidad jugando Uno y Conecta 4 en Kaos Coffee",
+        tag: 'Comunidad & Ocio',
+        title: 'Tardes de Juegos & Uno',
+        badge: 'Blaise Community',
+        desc: 'Noches sin prisas con amigos: mesas preparadas para retas de Uno, Conecta 4 y Jenga mientras disfrutas de nuestra barra de café y té.'
+      }
+    ];
+
+    let currentGalleryIndex = 0;
+    const mainImg = document.getElementById('gallery-main-img');
+    const badgeEl = document.getElementById('gallery-badge');
+    const tagEl = document.getElementById('gallery-tag');
+    const titleEl = document.getElementById('gallery-title');
+    const descEl = document.getElementById('gallery-desc');
+    const counterEl = document.getElementById('gallery-counter');
+    const thumbs = document.querySelectorAll('.gallery-thumb');
+
+    function updateGallery(index) {
+      currentGalleryIndex = index;
+      const data = galleryItems[index];
+      
+      mainImg.style.opacity = '0';
+      setTimeout(() => {
+        mainImg.src = data.src;
+        mainImg.alt = data.alt;
+        badgeEl.textContent = data.badge;
+        tagEl.textContent = data.tag;
+        titleEl.textContent = data.title;
+        descEl.textContent = data.desc;
+        counterEl.textContent = `0${index + 1} / 05`;
+        mainImg.style.opacity = '1';
+      }, 150);
+
+      thumbs.forEach((th, idx) => {
+        if (idx === index) {
+          th.classList.add('ring-2', 'ring-primary-container', 'opacity-100');
+          th.classList.remove('opacity-70', 'ring-0');
+        } else {
+          th.classList.remove('ring-2', 'ring-primary-container', 'opacity-100');
+          th.classList.add('opacity-70', 'ring-0');
+        }
+      });
+    }
+
+    document.getElementById('gallery-next')?.addEventListener('click', () => {
+      const nextIdx = (currentGalleryIndex + 1) % galleryItems.length;
+      updateGallery(nextIdx);
+    });
+
+    document.getElementById('gallery-prev')?.addEventListener('click', () => {
+      const prevIdx = (currentGalleryIndex - 1 + galleryItems.length) % galleryItems.length;
+      updateGallery(prevIdx);
+    });
+
+    thumbs.forEach(thumb => {
+      thumb.addEventListener('click', () => {
+        const idx = parseInt(thumb.getAttribute('data-index') || '0', 10);
+        updateGallery(idx);
+      });
+    });
+
+    // 2. Tabs de Filtrado del Menú
+    const filterTabs = document.querySelectorAll('.menu-tab');
+    const menuCards = document.querySelectorAll('.menu-item-card');
+
+    filterTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const filter = tab.getAttribute('data-filter');
+
+        filterTabs.forEach(t => {
+          t.classList.remove('bg-on-surface', 'text-surface-container-lowest', 'shadow-sm');
+          t.classList.add('text-on-surface-variant');
+        });
+
+        tab.classList.add('bg-on-surface', 'text-surface-container-lowest', 'shadow-sm');
+        tab.classList.remove('text-on-surface-variant');
+
+        menuCards.forEach(card => {
+          const cat = card.getAttribute('data-category');
+          if (filter === 'all' || cat === filter) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // 3. Modal de Preview Rápido
+    const modal = document.getElementById('item-modal');
+    const mTitle = document.getElementById('modal-title');
+    const mPrice = document.getElementById('modal-price');
+    const mDesc = document.getElementById('modal-desc');
+    const mCat = document.getElementById('modal-category');
+
+    function openPreviewModal(title, price, desc, category) {
+      if (!modal) return;
+      mTitle.textContent = title;
+      mPrice.textContent = price;
+      mDesc.textContent = desc;
+      mCat.textContent = category.toUpperCase();
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closePreviewModal() {
+      if (!modal) return;
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+    }
+
+    modal?.addEventListener('click', (e) => {
+      if (e.target === modal) closePreviewModal();
+    });
+  </script>
+</div></main><footer class="w-full bg-surface-container-low mt-12 py-12"><div class="w-full max-w-[1360px] mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-6"><div class="flex flex-col items-center md:items-start gap-1"><div class="flex items-center gap-2"><span class="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface font-bold">KAOS</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Specialty Coffee &amp; Bubble Tea</span></div><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors flex items-center gap-1" href="https://maps.google.com/?q=Leandro+Valle+310+Oaxaca" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined text-sm text-primary">location_on</span> Leandro Valle 310, Centro, 68000 Oaxaca de Juárez, Oax.</a></div><div class="flex flex-wrap items-center justify-center gap-6"><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-1" href="https://www.instagram.com/kaos_coffee_shop" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined text-base">photo_camera</span> Instagram</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-1" href="https://open.spotify.com/search/kaos%20coffee" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined text-base">headphones</span> Spotify</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-1" href="https://maps.google.com/?q=Leandro+Valle+310+Oaxaca" target="_blank" rel="noopener noreferrer"><span class="material-symbols-outlined text-base">map</span> Google Maps</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-1" href="https://www.ubereats.com" target="_blank" rel="noopener noreferrer">Uber Eats</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors flex items-center gap-1" href="https://www.rappi.com" target="_blank" rel="noopener noreferrer">Rappi</a></div><div class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant text-center md:text-right">© 2025 KAOS COFFEE SHOP. OAXACA.</div></div></footer>
+
+</body></html>

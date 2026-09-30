@@ -1,0 +1,16 @@
+# Copia de trabajo del export crudo de Stitch, antes de limpiar. Pesa y no
+# sirve en el repo: la traza de lo que llego esta en ../_stitch-export/
+crudo.html
+
+# Imagenes intermedias de la composicion de og.jpg
+og.ppm
+og.bmp
+
+node_modules/
+.DS_Store
+
+# Vercel: el project link y el token OIDC que escribe `vercel link`.
+# El token no viaja al repo bajo ningun motivo.
+.vercel
+.env
+.env.*

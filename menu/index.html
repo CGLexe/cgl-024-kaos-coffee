@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container":"#edeeef","on-primary":"#ffffff","inverse-on-surface":"#f0f1f2","primary":"#004d99","on-secondary-container":"#5d6800","primary-container":"#1565c0","secondary-fixed-dim":"#bdd200","secondary":"#596400","on-tertiary-fixed":"#1c1b1b","on-surface":"#191c1d","surface-container-high":"#e7e8e9","on-secondary-fixed-variant":"#434b00","inverse-primary":"#a9c7ff","on-primary-fixed":"#001b3d","on-error":"#ffffff","on-tertiary-container":"#e7e4e4","tertiary-fixed":"#e5e2e1","primary-fixed":"#d6e3ff","on-primary-container":"#dae5ff","error-container":"#ffdad6","surface":"#f8f9fa","surface-container-lowest":"#ffffff","surface-bright":"#f8f9fa","background":"#f8f9fa","surface-variant":"#e1e3e4","on-tertiary-fixed-variant":"#474646","outline-variant":"#c2c6d4","surface-container-highest":"#e1e3e4","surface-container-low":"#f3f4f5","on-secondary":"#ffffff","tertiary-fixed-dim":"#c8c6c5","tertiary-container":"#676666","on-tertiary":"#ffffff","on-surface-variant":"#424752","secondary-fixed":"#d8ef00","on-background":"#191c1d","secondary-container":"#d5ec00","tertiary":"#4f4e4e","on-error-container":"#93000a","outline":"#727783","on-secondary-fixed":"#1a1e00","inverse-surface":"#2e3132","on-primary-fixed-variant":"#00468c","surface-tint":"#005db7","error":"#ba1a1a","primary-fixed-dim":"#a9c7ff","surface-dim":"#d9dadb"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"space-xl":"2.5rem","space-xs":"0.25rem","space-md":"1rem","space-sm":"0.5rem","margin-mobile":"1.25rem","margin":"3rem","gutter-mobile":"1rem","gutter":"1.5rem","space-lg":"1.5rem"},fontFamily:{"label-sm":["Space Grotesk"],"display-hero-mobile":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"headline-sm":["Plus Jakarta Sans"],"headline-lg-mobile":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"],"label-lg":["Space Grotesk"],"label-md":["Space Grotesk"],"display-hero":["Plus Jakarta Sans"],"body-lg":["Inter"],"body-md":["Inter"],"body-sm":["Inter"]},fontSize:{"label-sm":["10px",{"lineHeight":"14px","letterSpacing":"0.08em","fontWeight":"600"}],"display-hero-mobile":["38px",{"lineHeight":"42px","letterSpacing":"-0.03em","fontWeight":"800"}],"headline-md":["24px",{"lineHeight":"30px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-sm":["20px",{"lineHeight":"26px","letterSpacing":"-0.01em","fontWeight":"600"}],"headline-lg-mobile":["28px",{"lineHeight":"34px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"-0.03em","fontWeight":"700"}],"label-lg":["14px",{"lineHeight":"18px","letterSpacing":"0.04em","fontWeight":"600"}],"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.06em","fontWeight":"500"}],"display-hero":["64px",{"lineHeight":"68px","letterSpacing":"-0.04em","fontWeight":"800"}],"body-lg":["18px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"400"}],"body-md":["15px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"18px","letterSpacing":"0em","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 left-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 w-full max-w-[1360px] mx-auto px-6 lg:px-12 flex items-center justify-between gap-6"><div class="flex items-center gap-6"><a class="flex items-center gap-3 group" data-path="inicio" href="#"><span class="font-headline-sm text-headline-sm uppercase tracking-tighter text-on-surface font-bold">KAOS</span><div class="inline-flex items-center justify-center gap-1.5 px-2.5 py-1 bg-secondary-container rounded-full"><span class="w-2.5 h-1 bg-on-surface rounded-full inline-block"></span><span class="w-2.5 h-1 bg-on-surface rounded-full inline-block"></span></div><span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant hidden sm:inline-block">OAXACA</span></a><div class="hidden xl:flex items-center gap-2 pl-4"><div class="flex items-center gap-2 px-3 py-1 bg-surface-container rounded-full"><span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface">Abierto Ahora • Leandro Valle #310</span></div></div></div><nav class="hidden lg:flex items-center gap-8" data-active-classes="text-on-surface font-semibold bg-surface-container-high px-3 py-1.5 rounded-lg"><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="inicio" href="#">Inicio</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="menu" href="#">Menú</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="galeria-interactiva" href="#">Galería Interactiva</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="comunidad-blaise" href="#">Comunidad Blaise</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="ubicacion-y-horarios" href="#">Ubicación y Horarios</a></nav><div class="flex items-center gap-4"><a class="hidden sm:inline-flex items-center px-4 py-2 bg-secondary-container text-on-surface font-label-md text-label-md uppercase tracking-wider font-semibold rounded-lg shadow-[2px_2px_0px_#191c1d] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all" data-path="pedidos-en-linea" href="#">Pedir en Línea</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface min-h-[calc(100vh-140px)]"><div class="flex flex-col w-full">
+<div class="w-full max-w-[1360px] mx-auto px-6 lg:px-12 py-8 flex flex-col gap-10">
+<!-- Top Editorial Header & Segmented Filter Bar -->
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 pb-6 border-b border-surface-variant/70">
+<div>
+<div class="flex items-center gap-2 mb-2">
+<span class="inline-flex items-center gap-1.5 px-2 py-0.5 bg-secondary-container rounded-full text-on-surface font-label-sm text-label-sm tracking-widest uppercase">
+            Carta Activa
+          </span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-medium">Temporada Oaxaca 2025</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg uppercase text-on-surface tracking-tighter">
+          Menú &amp; Experiencia Sensorial
+        </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-xl mt-1">
+          Bebidas artesanales infusionadas, granos de especialidad de la Sierra Sur y repostería recién horneada en Leandro Valle.
+        </p>
+</div>
+<!-- Quick Filter Chips -->
+<div class="flex items-center flex-wrap gap-2" id="filter-container">
+<button class="filter-btn px-4 py-2 rounded-full font-label-md text-label-md uppercase tracking-wider bg-on-surface text-secondary-container font-semibold transition-all" data-filter="todos" onclick="filterCategory('todos')">
+          Todos
+        </button>
+<button class="filter-btn px-4 py-2 rounded-full font-label-md text-label-md uppercase tracking-wider bg-surface-container text-on-surface hover:bg-surface-container-high transition-all" data-filter="waffles" onclick="filterCategory('waffles')">
+          Waffles
+        </button>
+<button class="filter-btn px-4 py-2 rounded-full font-label-md text-label-md uppercase tracking-wider bg-surface-container text-on-surface hover:bg-surface-container-high transition-all" data-filter="bubble-tea" onclick="filterCategory('bubble-tea')">
+          Bubble Tea
+        </button>
+<button class="filter-btn px-4 py-2 rounded-full font-label-md text-label-md uppercase tracking-wider bg-surface-container text-on-surface hover:bg-surface-container-high transition-all" data-filter="cafe" onclick="filterCategory('cafe')">
+          Café Especialidad
+        </button>
+<a class="px-4 py-2 rounded-full font-label-md text-label-md uppercase tracking-wider bg-secondary-container text-on-surface font-semibold shadow-[2px_2px_0px_#191c1d] hover:bg-secondary-fixed transition-all flex items-center gap-1.5" href="#galeria-seccion">
+<span class="material-symbols-outlined text-[16px]">photo_library</span>
+          Galería Visual
+        </a>
+</div>
+</div>
+<!-- Interactive Menu: 2-Column Split Console -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<!-- Left Column: Compact Category Listing -->
+<div class="lg:col-span-7 flex flex-col gap-6" id="menu-items-column">
+<!-- Category: Bubble Tea Signature -->
+<div class="category-block" data-category="bubble-tea">
+<div class="flex items-center justify-between pb-2 mb-3 border-b border-surface-variant">
+<span class="font-label-md text-label-md uppercase tracking-widest text-primary font-bold">01 / Bubble Tea &amp; Frutales</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Tapioca Fresca Diaria</span>
+</div>
+<div class="flex flex-col gap-2">
+<!-- Item 1 (Default Active) -->
+<div class="menu-item-row group cursor-pointer p-3.5 bg-surface-container-lowest rounded-xl hover:bg-surface-container-high transition-all shadow-sm flex items-center justify-between gap-4 border-2 border-primary" id="item-taro-crush" onclick="selectProduct('taro-crush')">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container overflow-hidden shrink-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[20px]">local_cafe</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Taro Velvet Bubble Crush</h3>
+<span class="px-1.5 py-0.5 rounded bg-secondary-container font-label-sm text-[9px] text-on-surface font-bold uppercase">Popular</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Taro orgánico molido, perlas de tapioca caramelizadas y leche deslactosada.</p>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">$88</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant uppercase">500 ml</span>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="menu-item-row group cursor-pointer p-3.5 bg-surface-container-lowest rounded-xl hover:bg-surface-container-high transition-all shadow-sm flex items-center justify-between gap-4 border-2 border-transparent" id="item-matcha-boba" onclick="selectProduct('matcha-boba')">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container overflow-hidden shrink-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">psychology_alt</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Uji Matcha Cloudy Sky</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Matcha ceremonial grado A de Uji, espuma de leche de coco y jelly de café.</p>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">$96</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant uppercase">500 ml</span>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="menu-item-row group cursor-pointer p-3.5 bg-surface-container-lowest rounded-xl hover:bg-surface-container-high transition-all shadow-sm flex items-center justify-between gap-4 border-2 border-transparent" id="item-tiger-milk" onclick="selectProduct('tiger-milk')">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container overflow-hidden shrink-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">filter_vintage</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Brown Sugar Brown Tiger</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Piloncillo artesanal oaxaqueño, tapioca tibia y crema sedosa al carbón vegetal.</p>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">$92</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant uppercase">480 ml</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Category: Café de Especialidad -->
+<div class="category-block mt-2" data-category="cafe">
+<div class="flex items-center justify-between pb-2 mb-3 border-b border-surface-variant">
+<span class="font-label-md text-label-md uppercase tracking-widest text-primary font-bold">02 / Café de Origen Pluma Hidalgo</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Cosecha 1,450 MSNM</span>
+</div>
+<div class="flex flex-col gap-2">
+<!-- Item 4 -->
+<div class="menu-item-row group cursor-pointer p-3.5 bg-surface-container-lowest rounded-xl hover:bg-surface-container-high transition-all shadow-sm flex items-center justify-between gap-4 border-2 border-transparent" id="item-flat-white" onclick="selectProduct('flat-white')">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container overflow-hidden shrink-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">coffee</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Flat White Pluma Doble</h3>
+<span class="px-1.5 py-0.5 rounded bg-surface-container font-label-sm text-[9px] text-on-surface uppercase">Sierra Sur</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Extracción doble ristretto, notas a cacao, naranja confitada y textura microespumada.</p>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">$64</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant uppercase">240 ml</span>
+</div>
+</div>
+<!-- Item 5 -->
+<div class="menu-item-row group cursor-pointer p-3.5 bg-surface-container-lowest rounded-xl hover:bg-surface-container-high transition-all shadow-sm flex items-center justify-between gap-4 border-2 border-transparent" id="item-tonic-coldbrew" onclick="selectProduct('tonic-coldbrew')">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container overflow-hidden shrink-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">local_bar</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Cold Brew Tónica &amp; Romero</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Macerado en frío por 18 horas, agua tónica artesanal y humo cítrico.</p>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">$76</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant uppercase">400 ml</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Category: Waffles -->
+<div class="category-block mt-2" data-category="waffles">
+<div class="flex items-center justify-between pb-2 mb-3 border-b border-surface-variant">
+<span class="font-label-md text-label-md uppercase tracking-widest text-primary font-bold">03 / Waffles Estilo Belga &amp; Tokio</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Horneado al Instante</span>
+</div>
+<div class="flex flex-col gap-2">
+<!-- Item 6 -->
+<div class="menu-item-row group cursor-pointer p-3.5 bg-surface-container-lowest rounded-xl hover:bg-surface-container-high transition-all shadow-sm flex items-center justify-between gap-4 border-2 border-transparent" id="item-waffle-caramel" onclick="selectProduct('waffle-caramel')">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container overflow-hidden shrink-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">bakery_dining</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Waffle Bubble Salty Pistachio</h3>
+<span class="px-1.5 py-0.5 rounded bg-secondary-container font-label-sm text-[9px] text-on-surface font-bold uppercase">Favorito</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Textura crocante con crema de pistache de Sicilia, helado de vainilla y flor de sal.</p>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">$120</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant uppercase">Porción completa</span>
+</div>
+</div>
+<!-- Item 7 -->
+<div class="menu-item-row group cursor-pointer p-3.5 bg-surface-container-lowest rounded-xl hover:bg-surface-container-high transition-all shadow-sm flex items-center justify-between gap-4 border-2 border-transparent" id="item-waffle-berries" onclick="selectProduct('waffle-berries')">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-lg bg-surface-container overflow-hidden shrink-0 flex items-center justify-center">
+<span class="material-symbols-outlined text-on-surface-variant text-[20px]">cake</span>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Dark Chocolate &amp; Frutos Rojos</h3>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-1">Waffle de masa madre, ganache de chocolate 70% Villa Alta y compota de zarzamora silvestre.</p>
+</div>
+</div>
+<div class="text-right shrink-0">
+<span class="font-headline-sm text-headline-sm font-bold text-on-surface">$115</span>
+<span class="block font-label-sm text-label-sm text-on-surface-variant uppercase">Porción completa</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Interactive Product Console & Customizer -->
+<div class="lg:col-span-5 sticky top-28">
+<div class="bg-surface-container-lowest rounded-2xl p-6 shadow-md border border-surface-variant flex flex-col gap-5">
+<!-- Console Image Bleed -->
+<div class="relative w-full h-64 rounded-xl overflow-hidden bg-surface-container flex items-center justify-center">
+<img alt="Bebida emblemática de Kaos Oaxaca" class="w-full h-full object-cover transition-opacity duration-300" id="preview-image" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1oYcqMfiP-pILlg9LGSzITPlIinvFjPf8NL7noc8Se-rxRF-aYkR-mvN6FIMDfz9CAb05w9ekAgAFKbUZXr3frj-OGWTKgvWOxe-59teOGzcH5h-v5JroS5n_PFEZQ9gsN1Bs_I92G5XbCo4fD875MtJDTKDX5OKPel_VcFn5gxCIKvSzRzW85OrM61S2jScjF-R-m58w8MTqy2EIgd4_56qqmsOHoCKLiHawaK7HPvumrDxj95o5jbw9zGMAXokqEQ"/>
+<div class="absolute top-3 right-3 inline-flex items-center gap-1.5 px-3 py-1 bg-surface-container-lowest/90 backdrop-blur rounded-full shadow-sm">
+<span class="w-2 h-2 rounded-full bg-secondary-fixed"></span>
+<span class="font-label-sm text-label-sm uppercase font-semibold text-on-surface" id="preview-tag">Signature Boba</span>
+</div>
+<div class="absolute bottom-3 left-3 bg-on-surface/85 backdrop-blur-md px-3 py-1.5 rounded-lg">
+<span class="font-label-sm text-label-sm uppercase text-secondary-fixed tracking-wider">KAOS • LEANDRO VALLE #310</span>
+</div>
+</div>
+<!-- Product Details -->
+<div>
+<div class="flex items-baseline justify-between gap-2">
+<h2 class="font-headline-md text-headline-md text-on-surface uppercase tracking-tight" id="preview-title">Taro Velvet Bubble Crush</h2>
+<span class="font-headline-md text-headline-md text-primary font-bold" id="preview-price">$88</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1" id="preview-desc">
+              Polvo de raíz de taro puro de agricultura sustentable, perlas de tapioca cocinadas a fuego lento cada 3 horas con almíbar de caña.
+            </p>
+</div>
+<!-- Ingredients List -->
+<div class="bg-surface-container-low p-3.5 rounded-xl">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-semibold block mb-2">Ingredientes &amp; Notas</span>
+<div class="flex flex-wrap gap-1.5" id="preview-ingredients">
+<span class="px-2 py-1 bg-surface-container-lowest rounded text-on-surface font-label-sm text-label-sm">Taro Orgánico</span>
+<span class="px-2 py-1 bg-surface-container-lowest rounded text-on-surface font-label-sm text-label-sm">Perlas de Tapioca</span>
+<span class="px-2 py-1 bg-surface-container-lowest rounded text-on-surface font-label-sm text-label-sm">Leche de Avena / Entera</span>
+<span class="px-2 py-1 bg-surface-container-lowest rounded text-on-surface font-label-sm text-label-sm">Miel de Caña</span>
+</div>
+</div>
+<!-- Customizer Modifiers -->
+<div class="flex flex-col gap-4 pt-2 border-t border-surface-variant" id="customizer-panel">
+<!-- Sweetness Level -->
+<div>
+<div class="flex justify-between items-center mb-1.5">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-semibold">Nivel de Dulzura</span>
+<span class="font-label-sm text-label-sm text-primary font-bold" id="current-sweetness">50% Recomendado</span>
+</div>
+<div class="grid grid-cols-4 gap-1.5 p-1 bg-surface-container rounded-xl">
+<button class="sweetness-opt py-1.5 rounded-lg font-label-sm text-label-sm font-semibold text-on-surface-variant hover:text-on-surface transition-all" onclick="setSweetness(this, '0%')" type="button">0%</button>
+<button class="sweetness-opt py-1.5 rounded-lg font-label-sm text-label-sm font-semibold text-on-surface-variant hover:text-on-surface transition-all" onclick="setSweetness(this, '30%')" type="button">30%</button>
+<button class="sweetness-opt py-1.5 rounded-lg font-label-sm text-label-sm font-semibold bg-on-surface text-secondary-container shadow-sm transition-all" onclick="setSweetness(this, '50%')" type="button">50%</button>
+<button class="sweetness-opt py-1.5 rounded-lg font-label-sm text-label-sm font-semibold text-on-surface-variant hover:text-on-surface transition-all" onclick="setSweetness(this, '100%')" type="button">100%</button>
+</div>
+</div>
+<!-- Ice Level -->
+<div>
+<div class="flex justify-between items-center mb-1.5">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-semibold">Proporción de Hielo</span>
+<span class="font-label-sm text-label-sm text-primary font-bold" id="current-ice">Normal</span>
+</div>
+<div class="grid grid-cols-3 gap-1.5 p-1 bg-surface-container rounded-xl">
+<button class="ice-opt py-1.5 rounded-lg font-label-sm text-label-sm font-semibold text-on-surface-variant hover:text-on-surface transition-all" onclick="setIce(this, 'Sin Hielo')" type="button">Sin Hielo</button>
+<button class="ice-opt py-1.5 rounded-lg font-label-sm text-label-sm font-semibold text-on-surface-variant hover:text-on-surface transition-all" onclick="setIce(this, 'Poco Hielo')" type="button">Poco Hielo</button>
+<button class="ice-opt py-1.5 rounded-lg font-label-sm text-label-sm font-semibold bg-on-surface text-secondary-container shadow-sm transition-all" onclick="setIce(this, 'Normal')" type="button">Normal</button>
+</div>
+</div>
+</div>
+<!-- Add to Order Button -->
+<div class="pt-2">
+<button class="w-full py-3.5 bg-primary text-on-primary rounded-xl font-label-md text-label-md uppercase tracking-widest font-semibold shadow-[3px_3px_0px_#191c1d] active:translate-x-[2px] active:translate-y-[2px] active:shadow-none transition-all flex items-center justify-center gap-2" id="order-submit-btn" onclick="triggerAddedFeedback()">
+<span class="material-symbols-outlined text-[18px]">add_shopping_cart</span>
+<span id="order-btn-text">Agregar a Selección ($88)</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Section Divider with Mascot Badge Accent -->
+<div class="flex items-center gap-4 my-8" id="galeria-seccion">
+<div class="h-[1px] bg-surface-variant flex-1"></div>
+<div class="flex items-center gap-2 px-3 py-1 bg-secondary-container rounded-full shadow-[2px_2px_0px_#191c1d]">
+<div class="flex items-center gap-1">
+<span class="w-2.5 h-1 bg-on-surface rounded-full"></span>
+<span class="w-2.5 h-1 bg-on-surface rounded-full"></span>
+</div>
+<span class="font-label-sm text-label-sm uppercase font-bold text-on-surface tracking-wider">Espacio &amp; Galería</span>
+</div>
+<div class="h-[1px] bg-surface-variant flex-1"></div>
+</div>
+<!-- Bento Gallery Section (Strict 6-Cell Proportional Mosaic) -->
+<div class="flex flex-col gap-6">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-primary font-bold">Atmósfera Kaos</span>
+<h2 class="font-headline-lg text-headline-lg uppercase text-on-surface tracking-tight mt-1">
+            Instantes en Leandro Valle
+          </h2>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-md">
+          Un refugio de arquitectura limpia, luz natural, diseño gráfico y comunidad en el corazón de Oaxaca de Juárez. Haz clic en cualquier recuadro para vista expandida.
+        </p>
+</div>
+<!-- Bento Grid 6 tiles -->
+<div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4 h-auto md:h-[620px]">
+<!-- Tile 1: El Espacio (Large Feature - 2 cols on LG) -->
+<div class="group relative overflow-hidden rounded-2xl bg-surface-container cursor-pointer shadow-sm md:col-span-2 lg:col-span-2 md:row-span-2 h-[300px] md:h-full" onclick="openLightbox('https://lh3.googleusercontent.com/aida-public/AB6AXuCEHMgaQKgAsKTDVy9cyXOkP8-KiThL2c0rmUdvV2LC5xYk3C6dOrqISIn_nvosJIOkn_TXLncLl61PeLmLNgrEuJqAP5gF_w06s03FfNJHF1TW71olmLDsiOZRhRFhMFmBSLA31UU9-1XjkCI2P_1PSRdLDwrdxV6Z3yEAcmhfpnL_XISUrLtfAKYWZpdLo-YEMdtBu8xLQMscbVfwsBTtB3TAjSeERwTbvXJKc7BujVn9S8oC9BXz0qhNhPF8t6VMQw', 'El Espacio Kaos', 'Arquitectura sobria, mesas de madera clara y luz cenital en nuestro patio de Oaxaca.')">
+<img alt="Espacio arquitectónico de Kaos Coffee Shop" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBI5DlfJjmRTNpQvStjGfG0dN-I8VjU19fO-Fq_fHotA3xKV-fpO5L0PfWxufmY9AZeDxXX-qiyfEiWf83qN1EjwSsWO6N5YBytq9FrAlKBP2PPqPP4WSzvxgAmdb8iSVhbPRwPwo_L6JMwF6vRdzJ-lPupsUV0T-7y44TY16G0hMBp-1zQIqIRoFqeURAX36j4ffsNHEO-bH8IWNKywFg4ogf26nh5hVsXVIkcj79LIEUalKBlHrNptOTzUez3UlJMQA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/80 via-transparent to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
+<div class="absolute bottom-4 left-4 right-4 flex items-end justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-container font-semibold">El Espacio</span>
+<p class="font-headline-sm text-headline-sm text-on-primary">Arquitectura y Calma Urbana</p>
+</div>
+<div class="w-9 h-9 rounded-full bg-surface-container-lowest/90 backdrop-blur flex items-center justify-center text-on-surface group-hover:bg-secondary-container transition-colors">
+<span class="material-symbols-outlined text-[20px]">fullscreen</span>
+</div>
+</div>
+</div>
+<!-- Tile 2: Empaque (1 col) -->
+<div class="group relative overflow-hidden rounded-2xl bg-surface-container cursor-pointer shadow-sm h-[220px] md:h-full" onclick="openLightbox('https://lh3.googleusercontent.com/aida-public/AB6AXuDPot7_ORzYg5C_NrDC4dBdaqlrntyC5MhhwMe6_JZCQPt7EWK3pgCOonZly4VAMZAO3p6DjG3BtcdWyvS1t1sfKxgFhHk5Hmacnm-Au6F30wH7zr4oc-ackBVCGmnPY94ze0QXI7crBDjYWwR5qVSqvPBR5V3Fvi_joU0viHuVsXEbf2ltF9PJlZyKfSXMQ7674ZyT-pTGIMf62IR29wQl3821lrzBVqPCjcSGlqqVz5uURCh6hZjadfz7uCew2q6ZDg', 'Packaging &amp; Identidad', 'Vasos y sellos con gráfica contemporánea de autor.')">
+<img alt="Empaque y vasos de café de Kaos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCm7IUuqxqMDSOzn6hSfBk777I3vjZ5hKevFM1Vs-UNi_64LS2h9Cdt8oO61NII2O7QSkbsdzXeN2CtCok44oUcESM7sr5uXbcboPWuKAoxdev02zTLYHcOnSFcNDL3BRyQbT-uqrlDpPGuuSlHx2Y0-KWshcI_UVeKwVpEhkNqL-y4Q_XpkbWAEjMeMdqRaSzjtG6aTiS0Gt28dRghSwAFhc61XZLmZnuD5r4HyZ15Qtl7uSBcjog6h_C68EZiPUGPRQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/75 via-transparent to-transparent"></div>
+<div class="absolute bottom-3 left-3 right-3 flex items-end justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-container font-semibold">Packaging</span>
+<p class="font-headline-sm text-headline-sm text-on-primary text-[17px] leading-5">Stickers &amp; Vasos</p>
+</div>
+<span class="material-symbols-outlined text-on-primary text-[18px]">zoom_in</span>
+</div>
+</div>
+<!-- Tile 3: Bebidas Signature (1 col) -->
+<div class="group relative overflow-hidden rounded-2xl bg-surface-container cursor-pointer shadow-sm h-[220px] md:h-full" onclick="openLightbox('https://lh3.googleusercontent.com/aida-public/AB6AXuCPKU38fRlWAkgOGoq6LOehbFMvDIqjT9-p1vglK_vsUusd0ytTSQcqv0n1LEcIs167r-PCNNYIUlCXWP5_dtlqkA0-rcbe9NIvY4tRpXl-b273fQUdXvooMnUDcmR6N7CCGPIvIdN8nvSVc5qcUWAxydw_gqXwDyVB3iza_tKthQi84iiRvudpel01-3EGF26sQeqUeKqDqtL451_oSpPvngnhCcvT4SQ_H8DaNGUcXPV7mz5emFdHqtBK_3qypj8F0A', 'Bebidas de Autor', 'Capas de sabores, taro orgánico y tés seleccionados.')">
+<img alt="Bebidas especiales de Kaos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC5rJaZffkEZ5UIja9aUcvlfbU8wcgMbShxxaGhsgefH_V7d0Cj5UjSClAx-z0m1SyNphf5dc8byw6y4brTpqFYCO8M4fm7C9mNsOsLetY-LGI0eTzVsQuU7hdRHXjZLpm4eKD7_P2kuOnkLTNNytTRJq7nUhC1F9lK4TmpLmNTp6RsGJqhPMX_1iXs6E7HX9IiU0zFK7_DMua5ieeE5xc55CUBXru2BHBy0eoFO3QF-jqDoxY564yKdZs5EXUNBJeAcg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/75 via-transparent to-transparent"></div>
+<div class="absolute bottom-3 left-3 right-3 flex items-end justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-container font-semibold">Taro &amp; Matcha</span>
+<p class="font-headline-sm text-headline-sm text-on-primary text-[17px] leading-5">Texturas Frías</p>
+</div>
+<span class="material-symbols-outlined text-on-primary text-[18px]">zoom_in</span>
+</div>
+</div>
+<!-- Tile 4: Arte en Muros (1 col) -->
+<div class="group relative overflow-hidden rounded-2xl bg-surface-container cursor-pointer shadow-sm h-[220px] md:h-full" onclick="openLightbox('https://lh3.googleusercontent.com/aida-public/AB6AXuBUk30TAjtOCouMAJIKlhEqUz8ZAYX7C2DWW48x2JEtdU-2fOpiZDlJtgszdYVTR5Z7zr5WLUkPJ5xrToGDdU1RzUkCDOu6v7Q59LCxNzlt3J-2hFqDiLlanof7dELfzAz480rMlc1VP4uiGo9FEs31dvSe04MyYATliE4-nKNwEzasd9oGE2kGtqk1NQ-mTd8Ws0O3wS4GyBv-qW1gY0oCHUkD_aM6BFcUE0FGvMQUZNUXO2oMbFJLe1r6kd7GmMKjaw', 'Murales y Gráfica', 'Intervenciones visuales en colaboración con creadores locales.')">
+<img alt="Muro intervenido con arte gráfico en Kaos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCAONo5Lm4ThTbZH42SmAIAzDzy_SR6J45xaJnoEQcJkoPYUCtzRS1X8yN7MvpMROfGI6TaiDEu4-4NdB0_J1rE_Rh95azsgR3VG0m8z4X1GZ59ZydBkzY5qEphppVgNkH_QfwimZIuGQZ5G3MkXQyKolRXdDO0quJYHdQmSMOBgb919DeAoqSIMNrFmvgMxYmggcITPxscIjefYrp-jXszgcXqzRk-p_XrbsGwWSgM6bVjH7T-6eRgW4gJhL-htAHdtg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/75 via-transparent to-transparent"></div>
+<div class="absolute bottom-3 left-3 right-3 flex items-end justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-container font-semibold">Muros</span>
+<p class="font-headline-sm text-headline-sm text-on-primary text-[17px] leading-5">Arte Urbano</p>
+</div>
+<span class="material-symbols-outlined text-on-primary text-[18px]">zoom_in</span>
+</div>
+</div>
+<!-- Tile 5: Momentos de Juego & Encuentro (1 col) -->
+<div class="group relative overflow-hidden rounded-2xl bg-surface-container cursor-pointer shadow-sm h-[220px] md:h-full" onclick="openLightbox('https://lh3.googleusercontent.com/aida-public/AB6AXuCjyeYpVNvCpIeAdr1-4olXA3kRWXtnbxJmw4mLINucoXlWpA5eaa6HwEwI59jFb0kPgV9wE1HOcCh0K49oCESOab9vaagK2ddZvPFZjeG-Xf5v_w-4whnkaZiVdDnCWKS5J29oaSsyyD6jMrGseMXM3OuUaO38lK78Zji87ABiH392ynyIwioEyXxfTSAdQEUnXqpL0PkG-VxJUszhXQjXRtEN3SkORvqLlCdPO4sH_K-Kx-JToPJPg9USv3r9IjFWWA', 'Comunidad &amp; Juego', 'Juegos de mesa, lecturas y charlas de tarde.')">
+<img alt="Momentos de juego y café con amigos en Kaos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCe7AwCrHZGoHdHK76M11bjt4Vo6iTAwEenqxukkIDS8VQLlf5tlLA0oRqpq0AVURL5ozILGIFOHb0ch3zB9P7BCJDiw-HrURGjJTG9PlAPs16_XNGFpbF2agrMXE9byIdzBIxYoKpXi9gQsT-igTXLn9If8p5T2oBXLvX2wZxfTQXip_RI1P3YMvkXkr0h7QiLC4e1azyChR02n_uK6WDSJP_nHnk5Mfi26xTL3LDYH6RGeED0P-9AFiDNEvwfGFZZxw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/75 via-transparent to-transparent"></div>
+<div class="absolute bottom-3 left-3 right-3 flex items-end justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-container font-semibold">Comunidad</span>
+<p class="font-headline-sm text-headline-sm text-on-primary text-[17px] leading-5">Tardes &amp; Conexión</p>
+</div>
+<span class="material-symbols-outlined text-on-primary text-[18px]">zoom_in</span>
+</div>
+</div>
+<!-- Tile 6: Selección de Bebidas Extendida (2 cols on tablet / 1 col on LG) -->
+<div class="group relative overflow-hidden rounded-2xl bg-surface-container cursor-pointer shadow-sm md:col-span-2 lg:col-span-2 h-[220px] md:h-full" onclick="openLightbox('https://lh3.googleusercontent.com/aida-public/AB6AXuB6UyyOmt6V8PhRobhgT3A0BkF2665ihy-lr7CFpsVwPvpKF5v_gWE-nPFkKyS5Nw16txvR2DSoA772fgOtNdraZuCkKf8jMqGeeSCJbiOrGzIQpBj-B94krBKEogLVVpRJyColZp0KnsoDm-nHgx1U8acPfWmebvhtg17F61_pE-bH1Z6s7NJdjhYDoav4fGm_OZUR-TOgnhtJq6e_EWiiaPhGPgy0ssZ_nFF2aJHjsUYzYUCEFsltgPwlwKlGF7YnAA', 'Barra de Especialidad', 'Preparaciones meticulosas en V60 y espresso doble.')">
+<img alt="Detalle de servicio de bebidas Kaos" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCLNOOTjOQPLgtYKGjnwAk8PXmkgeWw1H1ViungccrNnpyHOGeQnUG79mYtVF0negs1pA-B0sBSs4-2NG7bVZsF955uoS4iCw0366RFxLVn_uERRnP1jfYjFjeDFp5QMo1MLCp3_Z_5StsPWP9YWyAp8aTTlu_BEBs_IPNYTTXqd5bk4OfojPZ8rBqXbnMK3jvCKTBIzXbgQ7r-kafJdILCQ1h6nri46i2ovD1aLCMWNVlpXF2SseLj-SpB18E1oDP4vA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-on-surface/75 via-transparent to-transparent"></div>
+<div class="absolute bottom-3 left-3 right-3 flex items-end justify-between">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary-container font-semibold">Barra</span>
+<p class="font-headline-sm text-headline-sm text-on-primary text-[17px] leading-5">Rituales de Extracción</p>
+</div>
+<span class="material-symbols-outlined text-on-primary text-[18px]">zoom_in</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Minimalist Modal Lightbox -->
+<div class="fixed inset-0 z-50 bg-on-surface/85 backdrop-blur-md hidden items-center justify-center p-4 lg:p-12" id="gallery-lightbox">
+<div class="relative max-w-4xl w-full bg-surface-container-lowest rounded-2xl overflow-hidden shadow-2xl flex flex-col md:flex-row border border-outline-variant/30">
+<!-- Close Button -->
+<button class="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-on-surface text-surface flex items-center justify-center shadow-md hover:bg-primary transition-colors" onclick="closeLightbox()">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+<!-- Lightbox Image Bleed -->
+<div class="w-full md:w-3/5 bg-on-surface flex items-center justify-center h-[340px] md:h-[500px]">
+<img alt="Vista previa de galería Kaos" class="max-h-full max-w-full object-contain" id="lightbox-img" src=""/>
+</div>
+<!-- Lightbox Meta Info -->
+<div class="w-full md:w-2/5 p-6 md:p-8 flex flex-col justify-between bg-surface-container-lowest">
+<div>
+<div class="flex items-center gap-2 mb-3">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-on-surface-variant font-semibold">Oaxaca de Juárez</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface uppercase tracking-tight" id="lightbox-title"></h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3" id="lightbox-desc"></p>
+</div>
+<div class="pt-6 border-t border-surface-variant flex items-center justify-between">
+<div class="flex items-center gap-1.5 px-3 py-1 bg-secondary-container rounded-full">
+<span class="w-2 h-1 bg-on-surface rounded-full"></span>
+<span class="w-2 h-1 bg-on-surface rounded-full"></span>
+<span class="font-label-sm text-label-sm font-bold uppercase ml-1">KAOS</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">#KaosCoffeeOax</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Persistent Floating Delivery & Quick Order Bar -->
+<aside aria-label="Pedidos rápidos a domicilio" class="fixed bottom-4 left-1/2 -translate-x-1/2 z-40 w-[94%] max-w-[820px] bg-surface-container-lowest/95 backdrop-blur-xl border border-surface-variant/80 rounded-2xl shadow-[0_8px_30px_rgba(0,0,0,0.12)] p-3 px-4 sm:px-6 flex items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<div class="w-2.5 h-2.5 rounded-full bg-secondary-fixed animate-ping"></div>
+<div class="hidden sm:block">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-bold block">Pide a Domicilio</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Entregas calientes y frías en 20-35 min en zona Centro</span>
+</div>
+<div class="sm:hidden font-label-md text-label-md uppercase font-bold text-on-surface">Pide a Domicilio</div>
+</div>
+<div class="flex items-center gap-2">
+<!-- Uber Eats Button -->
+<a class="px-3.5 py-2 rounded-xl bg-surface-container hover:bg-surface-container-high text-on-surface font-label-md text-label-md uppercase tracking-wider font-semibold transition-all flex items-center gap-1.5" href="https://www.ubereats.com" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px] text-primary">moped</span>
+<span>Uber Eats</span>
+</a>
+<!-- Rappi Button -->
+<a class="px-3.5 py-2 rounded-xl bg-secondary-container hover:bg-secondary-fixed text-on-surface font-label-md text-label-md uppercase tracking-wider font-semibold shadow-[2px_2px_0px_#191c1d] active:translate-x-[1px] active:translate-y-[1px] active:shadow-none transition-all flex items-center gap-1.5" href="https://www.rappi.com.mx" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">shopping_bag</span>
+<span>Rappi</span>
+</a>
+</div>
+</aside>
+<!-- Interactive State Engine -->
+<script>
+    const productsData = {
+      'taro-crush': {
+        title: 'Taro Velvet Bubble Crush',
+        price: '$88',
+        tag: 'Signature Boba',
+        img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBXslRT1iS4wtACHirCYhnxYOeEAbAtMn9nMsCUxxTUfkxEAGSA9IDSNLXSG1r9FmEbravAfNDrLStFGGczLh_l2Xz27p0YELHgagukIf1ZCokIMvbhqm2UNYPwHmgq9qMVxApTMbdOX3uxDdnx7RHRBN7F9TV3RpzZVo7yfIWVOwjUT3x6hcTNlZk0mkeDEjANfgmu6h3KhovZEDH4ovjtwxRhq_EwtJbYkh6WGPBXVHyyLEIoWXrnr3_KeKS593jXwg',
+        desc: 'Polvo de raíz de taro puro de agricultura sustentable, perlas de tapioca cocinadas a fuego lento cada 3 horas con almíbar de caña.',
+        ingredients: ['Taro Orgánico', 'Perlas de Tapioca', 'Leche de Avena / Entera', 'Miel de Caña']
+      },
+      'matcha-boba': {
+        title: 'Uji Matcha Cloudy Sky',
+        price: '$96',
+        tag: 'Ceremonial Grade',
+        img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDu92SkuqN4MvQZGSHMG6-J5Epo4aTWQnYkCyuaMOOtrl1JGFNd4VandPOK0KTkZ1NnMgydvl6_stVMs9dvCHi1mko0WZbsILs1wGD4UbFWdRNGuTRQdgRbb3pN3r-rF6reP0fUmls8TKwwzcrPCQ-v60SjAw1jS7fzqGEy-Tgpgc_yrTDZ5KQ9neyX14PyHtPVXIRRLokPxViEQdVJemDZXI_dPSvmvk_K9yaQNHf0-VudlArHdNIi3EA5b7XJBS3syA',
+        desc: 'Matcha ceremonial de primera cosecha importado de Uji, Kioto. Batido al momento sobre leche vaporizada y jelly artesanal de café Pluma.',
+        ingredients: ['Matcha Uji Grado A', 'Jelly de Café Kaos', 'Espuma de Coco', 'Vainilla Natural']
+      },
+      'tiger-milk': {
+        title: 'Brown Sugar Brown Tiger',
+        price: '$92',
+        tag: 'Street Legend',
+        img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC1QYy1f3197nf4pV1hT99B4KvPhtqqLA310ecTJwUxuhHBx59PgWvgxL5vWMPljpBbwETIxQUT0q6S2bhzAh2YVAefHVoFSD7Owaw2LH2jVy0wwK5-wDTxgi1AU-d3V9-tkXT3CL8_F4ZPi6B-OLcpPNyKxnkE0RHLlr0vVpVEAdIReJSWhtBk3daZAL-lpVsJDWaADZ5SEhtu2yty5QXXR8a-OpcWCKIYBs8fcsZIQQnADNA3OfqIonW5Fqb4vp64YQ',
+        desc: 'Espeso sirope artesanal de piloncillo regional que crea vetas en el vaso, servido con leche fresca fría y perlas calientes recién caramelizadas.',
+        ingredients: ['Piloncillo Oaxaqueño', 'Perlas Tibias de Tapioca', 'Crema Batida', 'Carbón Activado']
+      },
+      'flat-white': {
+        title: 'Flat White Pluma Doble',
+        price: '$64',
+        tag: 'Origen Oaxaca',
+        img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuDHjbu2NU2xWywk0Op2i99OqNxqhlGE2lh6seCc75wVUSLPXpQ6RDJriOhHrZUSenRwMiQSKTtWXANfupPsfjIRhx4jFJtARNgSB_FeqtBFS1DEmeMgG7-iRM6PGkr2eRa72b3ZtcoCKywSNf-x46CSvFeYpjKrqhX5EaeWmsQHebZO9j4-_m9TnqLIOVE46q-Z25G9olmHgytutOQdV654XZcK5QyD_0lEJuduZ4Zp6kvtVumyeIA2hTd8JO4HUTrPjw',
+        desc: 'Café de variedad Typica cosechado a mano en Pluma Hidalgo. Notas vibrantes a cáscara de naranja, chocolate amargo 70% y sedosa microespuma.',
+        ingredients: ['Granos Pluma Hidalgo', 'Tostado Medio Kaos', 'Microespuma 65°C', 'Origen Único']
+      },
+      'tonic-coldbrew': {
+        title: 'Cold Brew Tónica & Romero',
+        price: '$76',
+        tag: 'Cold Infusion',
+        img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuD8sJI8TZdwkquneaFHqBfyc571kXDcPd3SEwap2wckMUKmTKzFUiWjIF67C9vAh2fF0LnamqHkzCEnuqqIgOGAiOPn91w1_eStCBV1CDj1OsyFRosx3BqUZE6wIi5gSZaGwbHsQCCxouVaCE99btKpuf6FQqLC1-s-sEE6dou1gMuP4wf-TEmn-gZRXZHcqQ2jF1Yyz0v0k2T9TiKowNQwS3aC1kMUkGD__p7PEFIuMLvSr7MgxOEOeHXg6GVZ_De_GQ',
+        desc: 'Infusión en frío durante 18 horas que extrae dulzor sin amargor. Combinado con agua tónica de quinina natural y ramita de romero ahumado al soplete.',
+        ingredients: ['Cold Brew 18 Horas', 'Tónica Botánica', 'Romero Fresco', 'Twist de Toronja']
+      },
+      'waffle-caramel': {
+        title: 'Waffle Bubble Salty Pistachio',
+        price: '$120',
+        tag: 'Dulce / Crujiente',
+        img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuBsphM_mF3M4w4ibaVYSfuhRX-FWmss_fl0sbTYOaCkCxwZy7faYtJw4ishyhRMXCcFBlJrzKDvsLb7qPC8ad1reAHocvXsFi4NCDi4lCDJwr6yxgVXCEkbw7BZJ_-WzzAypy0nggHTzBiN5ZL12DHnoe28e5kAxLHANqea2fCeYJdzYxXWMvxki7gHNo2sQ6NakvGoPT_20V-ztw9lQjZDlB7_62UeqGtoibHBdG31hnnwEgT6EOmmSj6OsOvaAgUj3Q',
+        desc: 'Masa aireada con burbujas crocantes horneada al segundo, cubierta con praliné de pistache artesanal, helado mantecoso y cristales de sal marina.',
+        ingredients: ['Masa Crujiente', 'Crema de Pistache 100%', 'Helado Vainilla Bourbon', 'Flor de Sal']
+      },
+      'waffle-berries': {
+        title: 'Dark Chocolate & Frutos Rojos',
+        price: '$115',
+        tag: 'Repostería Kaos',
+        img: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCmDOQ-4WMRgjGyBiomKWbvosJ37848ATuKim_4FX4JuQE8YE7USAcz6TGFblIxV380x5snugBAMfk4TiJxpwYRH5ikttkqzCs4NUv8B_HpeczSJehZ8AzwSpKdObnHXxE5dA1zrWetum8cCIEH29N91yvoyhqlP984Rb2CDgE7oqg8NHMD-THdE1ustVJPupQDVEKueaEQ3Ge7Q5t7iOvAOPZhRZ_8LSaBMKpTzwWesdrxqlkLTshV-8-OJWXuSUoWPQ',
+        desc: 'Waffle crujiente de masa madre bañado con chocolate negro oaxaqueño fundido y reducción de frutos del bosque frescos sin azúcar refinada.',
+        ingredients: ['Chocolate Villa Alta 70%', 'Fresas & Frambuesas', 'Masa Madre', 'Nibs de Cacao']
+      }
+    };
+
+    let selectedCustom = {
+      product: 'taro-crush',
+      sweetness: '50%',
+      ice: 'Normal'
+    };
+
+    function selectProduct(id) {
+      const data = productsData[id];
+      if (!data) return;
+      selectedCustom.product = id;
+
+      // Update right console
+      const pImg = document.getElementById('preview-image');
+      pImg.style.opacity = '0.3';
+      setTimeout(() => {
+        pImg.src = data.img;
+        pImg.style.opacity = '1';
+      }, 150);
+
+      document.getElementById('preview-title').innerText = data.title;
+      document.getElementById('preview-price').innerText = data.price;
+      document.getElementById('preview-desc').innerText = data.desc;
+      document.getElementById('preview-tag').innerText = data.tag;
+      document.getElementById('order-btn-text').innerText = 'Agregar a Selección (' + data.price + ')';
+
+      // Update ingredients chips
+      const ingCont = document.getElementById('preview-ingredients');
+      ingCont.innerHTML = data.ingredients.map(ing => 
+        `<span class="px-2 py-1 bg-surface-container-lowest rounded text-on-surface font-label-sm text-label-sm">${ing}</span>`
+      ).join('');
+
+      // Toggle active border in left list
+      document.querySelectorAll('.menu-item-row').forEach(row => {
+        row.classList.remove('border-primary');
+        row.classList.add('border-transparent');
+      });
+      const activeRow = document.getElementById('item-' + id);
+      if (activeRow) {
+        activeRow.classList.remove('border-transparent');
+        activeRow.classList.add('border-primary');
+      }
+    }
+
+    function setSweetness(btn, val) {
+      selectedCustom.sweetness = val;
+      document.getElementById('current-sweetness').innerText = val + (val === '50%' ? ' Recomendado' : '');
+      document.querySelectorAll('.sweetness-opt').forEach(b => {
+        b.className = 'sweetness-opt py-1.5 rounded-lg font-label-sm text-label-sm font-semibold text-on-surface-variant hover:text-on-surface transition-all';
+      });
+      btn.className = 'sweetness-opt py-1.5 rounded-lg font-label-sm text-label-sm font-semibold bg-on-surface text-secondary-container shadow-sm transition-all';
+    }
+
+    function setIce(btn, val) {
+      selectedCustom.ice = val;
+      document.getElementById('current-ice').innerText = val;
+      document.querySelectorAll('.ice-opt').forEach(b => {
+        b.className = 'ice-opt py-1.5 rounded-lg font-label-sm text-label-sm font-semibold text-on-surface-variant hover:text-on-surface transition-all';
+      });
+      btn.className = 'ice-opt py-1.5 rounded-lg font-label-sm text-label-sm font-semibold bg-on-surface text-secondary-container shadow-sm transition-all';
+    }
+
+    function filterCategory(cat) {
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        if (btn.getAttribute('data-filter') === cat) {
+          btn.className = 'filter-btn px-4 py-2 rounded-full font-label-md text-label-md uppercase tracking-wider bg-on-surface text-secondary-container font-semibold transition-all';
+        } else {
+          btn.className = 'filter-btn px-4 py-2 rounded-full font-label-md text-label-md uppercase tracking-wider bg-surface-container text-on-surface hover:bg-surface-container-high transition-all';
+        }
+      });
+
+      const blocks = document.querySelectorAll('.category-block');
+      blocks.forEach(block => {
+        if (cat === 'todos' || block.getAttribute('data-category') === cat) {
+          block.style.display = 'block';
+        } else {
+          block.style.display = 'none';
+        }
+      });
+    }
+
+    function triggerAddedFeedback() {
+      const btn = document.getElementById('order-submit-btn');
+      const originalText = document.getElementById('order-btn-text').innerText;
+      btn.classList.add('bg-secondary-container', 'text-on-surface');
+      btn.classList.remove('bg-primary', 'text-on-primary');
+      document.getElementById('order-btn-text').innerText = '✓ ¡Agregado a tu Pedido!';
+      
+      setTimeout(() => {
+        btn.classList.remove('bg-secondary-container', 'text-on-surface');
+        btn.classList.add('bg-primary', 'text-on-primary');
+        document.getElementById('order-btn-text').innerText = originalText;
+      }, 1800);
+    }
+
+    // Lightbox Controls
+    function openLightbox(imgSrc, title, desc) {
+      document.getElementById('lightbox-img').src = imgSrc;
+      document.getElementById('lightbox-title').innerText = title;
+      document.getElementById('lightbox-desc').innerText = desc;
+      const modal = document.getElementById('gallery-lightbox');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+    }
+
+    function closeLightbox() {
+      const modal = document.getElementById('gallery-lightbox');
+      modal.classList.remove('flex');
+      modal.classList.add('hidden');
+    }
+
+    // Close on background backdrop click
+    document.getElementById('gallery-lightbox').addEventListener('click', function(e) {
+      if (e.target === this) {
+        closeLightbox();
+      }
+    });
+  </script>
+</div></main><footer class="w-full bg-surface-container-low mt-12 py-12"><div class="w-full max-w-[1360px] mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-6"><div class="flex flex-col items-center md:items-start gap-1"><div class="flex items-center gap-2"><span class="font-headline-sm text-headline-sm uppercase tracking-tight text-on-surface font-bold">KAOS</span><span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Specialty Coffee &amp; Bubble Tea</span></div><p class="font-body-sm text-body-sm text-on-surface-variant">Leandro Valle 310, Centro, 68000 Oaxaca de Juárez, Oax.</p></div><div class="flex items-center gap-6"><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" href="#">Instagram</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" href="#">Spotify</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" href="#">Uber Eats</a><a class="font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" href="#">Rappi</a></div><div class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant text-center md:text-right">© 2025 KAOS COFFEE SHOP. OAXACA.</div></div></footer></body></html>

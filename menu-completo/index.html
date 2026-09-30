@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+
+<html lang="es"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "primary-fixed": "#d6e3ff", "on-surface-variant": "#424752", "on-background": "#191c1d", "surface-container": "#edeeef", "primary-container": "#1565c0", "secondary-fixed-dim": "#bdd200", "surface-container-high": "#e7e8e9", "on-primary-container": "#dae5ff", "tertiary-container": "#676666", "surface-container-low": "#f3f4f5", "surface-dim": "#d9dadb", "on-surface": "#191c1d", "surface": "#f8f9fa", "on-tertiary": "#ffffff", "on-primary-fixed-variant": "#00468c", "secondary-fixed": "#d8ef00", "on-primary": "#ffffff", "tertiary-fixed-dim": "#c8c6c5", "on-error": "#ffffff", "secondary-container": "#d5ec00", "inverse-on-surface": "#f0f1f2", "surface-container-lowest": "#ffffff", "surface-tint": "#005db7", "on-secondary-fixed-variant": "#434b00", "surface-container-highest": "#e1e3e4", "surface-bright": "#f8f9fa", "inverse-primary": "#a9c7ff", "outline-variant": "#c2c6d4", "on-error-container": "#93000a", "error-container": "#ffdad6", "primary": "#004d99", "on-tertiary-fixed": "#1c1b1b", "error": "#ba1a1a", "outline": "#727783", "inverse-surface": "#2e3132", "tertiary": "#4f4e4e", "primary-fixed-dim": "#a9c7ff", "on-tertiary-fixed-variant": "#474646", "on-tertiary-container": "#e7e4e4", "on-primary-fixed": "#001b3d", "on-secondary-fixed": "#1a1e00", "secondary": "#596400", "surface-variant": "#e1e3e4", "background": "#f8f9fa", "tertiary-fixed": "#e5e2e1", "on-secondary": "#ffffff", "on-secondary-container": "#5d6800" }, borderRadius: { DEFAULT: "0.125rem", lg: "0.25rem", xl: "0.5rem", full: "0.75rem" }, spacing: { "margin": "3rem", "gutter-mobile": "1rem", "gutter": "1.5rem", "margin-mobile": "1.25rem", "space-xl": "2.5rem", "space-xs": "0.25rem", "space-sm": "0.5rem", "space-lg": "1.5rem", "space-md": "1rem" }, fontFamily: { "headline-md": ["Plus Jakarta Sans"], "headline-sm": ["Plus Jakarta Sans"], "body-sm": ["Inter"], "label-lg": ["Space Grotesk"], "headline-lg": ["Plus Jakarta Sans"], "body-md": ["Inter"], "headline-lg-mobile": ["Plus Jakarta Sans"], "label-md": ["Space Grotesk"], "body-lg": ["Inter"], "label-sm": ["Space Grotesk"], "display-hero-mobile": ["Plus Jakarta Sans"], "display-hero": ["Plus Jakarta Sans"] }, fontSize: { "headline-md": ["24px", { lineHeight: "30px", letterSpacing: "-0.02em", fontWeight: "700" }], "headline-sm": ["20px", { lineHeight: "26px", letterSpacing: "-0.01em", fontWeight: "600" }], "body-sm": ["13px", { lineHeight: "18px", letterSpacing: "0em", fontWeight: "400" }], "label-lg": ["14px", { lineHeight: "18px", letterSpacing: "0.04em", fontWeight: "600" }], "headline-lg": ["40px", { lineHeight: "48px", letterSpacing: "-0.03em", fontWeight: "700" }], "body-md": ["15px", { lineHeight: "24px", letterSpacing: "0em", fontWeight: "400" }], "headline-lg-mobile": ["28px", { lineHeight: "34px", letterSpacing: "-0.02em", fontWeight: "700" }], "label-md": ["12px", { lineHeight: "16px", letterSpacing: "0.06em", fontWeight: "500" }], "body-lg": ["18px", { lineHeight: "28px", letterSpacing: "-0.01em", fontWeight: "400" }], "label-sm": ["10px", { lineHeight: "14px", letterSpacing: "0.08em", fontWeight: "600" }], "display-hero-mobile": ["38px", { lineHeight: "42px", letterSpacing: "-0.03em", fontWeight: "800" }], "display-hero": ["64px", { lineHeight: "68px", letterSpacing: "-0.04em", fontWeight: "800" }] } } } };</script><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style></head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-16 px-gutter-mobile flex items-center justify-between"><div class="flex items-center gap-space-sm"><div class="flex items-center bg-primary px-2.5 py-1 rounded-full text-on-primary shadow-[2px_2px_0px_#191c1d]"><span class="font-label-lg text-label-lg font-bold tracking-tight mr-1.5">KAOS</span><div class="flex items-center gap-0.5 bg-secondary-container px-1 py-0.5 rounded-full"><span class="w-1.5 h-1 bg-on-surface rounded-full inline-block"></span><span class="w-1.5 h-1 bg-on-surface rounded-full inline-block"></span></div></div><div class="flex items-center gap-1 text-on-surface-variant pl-1"><span class="material-symbols-outlined text-[16px] text-primary">near_me</span><span class="font-label-sm text-label-sm uppercase tracking-wider font-semibold text-on-surface">OAXACA CENTRO</span></div></div><div class="flex items-center gap-space-sm"><img alt="Profile" class="w-8 h-8 rounded-full object-cover shadow-[0_1px_4px_rgba(0,0,0,0.08)]" src="https://lh3.googleusercontent.com/aida/AEtjO1XyjiS1nWrURjKkvQWmJkqwHx_mR30SdWZaLogtiJKwk8vxZ7KjYqAhJf_wtVQUx0IysxSrdyJ1oFab5nBB3X5R35eX-CDDIlCcYShaaNx8EeFxp5nrknQQAiD0xD-bFOYRpCOghzouRCNssWIkdH-X0gkj2Pfo3ANq627chlbWN76J_A_aZSxhk4j83DQ-uu_-0gQSD-CB26eF4A92oDRF57cuhzUKWoGQNDzsUEFkMDoPJsYgZtSrFgpGnwplvk770CTuf7nepA"/><button aria-label="Menú" class="w-11 h-11 flex items-center justify-center rounded-lg bg-surface-container-lowest text-on-surface shadow-[0_1px_4px_rgba(0,0,0,0.06)] active:scale-95 transition-transform"><span class="material-symbols-outlined text-[22px]">menu</span></button></div></div></header><main class="flex flex-col relative w-full pt-16 pb-28 bg-surface"><div class="flex flex-col w-full">
+<!-- Status & Quick Search Row -->
+<div class="px-gutter-mobile pt-3 pb-2 flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<div>
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-primary font-bold">Barra de Especialidad</span>
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-secondary-container"></span>
+</div>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface tracking-tight">MENÚ KAOS</h1>
+</div>
+<!-- Tactile Mascot Eyes Interactive Pill -->
+<div class="flex items-center gap-1.5 bg-secondary-container px-3 py-1.5 rounded-full shadow-[2px_2px_0px_#191c1d] cursor-pointer select-none active:scale-95 transition-transform" id="mascot-badge" title="Modo Kaos">
+<span class="w-2 h-1.5 bg-on-surface rounded-full transition-transform duration-150 inline-block mascot-eye"></span>
+<span class="w-2 h-1.5 bg-on-surface rounded-full transition-transform duration-150 inline-block mascot-eye"></span>
+<span class="font-label-sm text-label-sm font-bold text-on-surface tracking-widest ml-1">OAXACA</span>
+</div>
+</div>
+<!-- Minimalist Search Pill -->
+<div class="relative w-full">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-[20px]">search</span>
+<input class="w-full bg-surface-container-lowest text-on-surface placeholder:text-outline font-body-sm text-body-sm rounded-lg pl-10 pr-9 py-2.5 shadow-sm outline-none focus:bg-surface-container-lowest focus:ring-0 transition-all" id="menu-search-input" placeholder="Buscar waffles, taro, matcha, espresso..." type="text"/>
+<button aria-label="Limpiar" class="hidden absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant text-body-sm" id="clear-search-btn">
+<span class="material-symbols-outlined text-[18px]">close</span>
+</button>
+</div>
+</div>
+<!-- Category Filter Chips (Horizontal Swipe) -->
+<div class="w-full overflow-x-auto no-scrollbar py-2 px-gutter-mobile flex gap-2">
+<button class="cat-chip whitespace-nowrap px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-on-surface text-secondary-container font-semibold shadow-[0_2px_6px_rgba(0,0,0,0.12)] transition-all" data-cat="all">Todos</button>
+<button class="cat-chip whitespace-nowrap px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-surface-container-high text-on-surface font-medium transition-all" data-cat="waffles-dulces">Waffles Dulces</button>
+<button class="cat-chip whitespace-nowrap px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-surface-container-high text-on-surface font-medium transition-all" data-cat="waffles-salados">Waffles Salados</button>
+<button class="cat-chip whitespace-nowrap px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-surface-container-high text-on-surface font-medium transition-all" data-cat="tapiocas">Tapiocas &amp; Fusión</button>
+<button class="cat-chip whitespace-nowrap px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-surface-container-high text-on-surface font-medium transition-all" data-cat="cafe">Café &amp; Cloudy</button>
+<button class="cat-chip whitespace-nowrap px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-surface-container-high text-on-surface font-medium transition-all" data-cat="sodas">Sodas &amp; Refresher</button>
+</div>
+<!-- Interactive Drink Customizer Drawer / Quick Config Tray -->
+<div class="mx-gutter-mobile mt-2 mb-4 bg-surface-container-lowest rounded-xl p-3.5 shadow-sm">
+<div class="flex items-center justify-between pb-2">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">tune</span>
+<span class="font-label-md text-label-md font-bold text-on-surface tracking-wide uppercase">Personalizador Kaos</span>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant bg-surface-container px-2 py-0.5 rounded">Ajustes Rápidos</span>
+</div>
+<!-- Modifiers Controls Grid -->
+<div class="flex flex-col gap-2.5 pt-1">
+<!-- Dulzor -->
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium w-16">Dulzor</span>
+<div class="flex-1 flex bg-surface-container p-0.5 rounded-lg gap-1 max-w-[240px]">
+<button class="mod-btn flex-1 py-1 rounded-md font-label-sm text-label-sm text-on-surface-variant text-center transition-all" data-group="sweetness" data-val="0">0%</button>
+<button class="mod-btn flex-1 py-1 rounded-md font-label-sm text-label-sm text-on-surface-variant text-center transition-all" data-group="sweetness" data-val="30">30%</button>
+<button class="mod-btn flex-1 py-1 rounded-md font-label-sm text-label-sm bg-primary text-on-primary font-semibold shadow-sm transition-all" data-group="sweetness" data-val="50">50%</button>
+<button class="mod-btn flex-1 py-1 rounded-md font-label-sm text-label-sm text-on-surface-variant text-center transition-all" data-group="sweetness" data-val="100">100%</button>
+</div>
+</div>
+<!-- Hielo -->
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium w-16">Hielo</span>
+<div class="flex-1 flex bg-surface-container p-0.5 rounded-lg gap-1 max-w-[240px]">
+<button class="mod-btn flex-1 py-1 rounded-md font-label-sm text-label-sm bg-primary text-on-primary font-semibold shadow-sm transition-all" data-group="ice" data-val="reg">Regular</button>
+<button class="mod-btn flex-1 py-1 rounded-md font-label-sm text-label-sm text-on-surface-variant text-center transition-all" data-group="ice" data-val="low">Poco</button>
+<button class="mod-btn flex-1 py-1 rounded-md font-label-sm text-label-sm text-on-surface-variant text-center transition-all" data-group="ice" data-val="none">Sin Hielo</button>
+</div>
+</div>
+<!-- Tipo de Leche -->
+<div class="flex items-center justify-between">
+<span class="font-label-sm text-label-sm text-on-surface-variant font-medium w-16">Leche</span>
+<div class="flex-1 flex bg-surface-container p-0.5 rounded-lg gap-1 max-w-[240px]">
+<button class="mod-btn flex-1 py-1 rounded-md font-label-sm text-label-sm bg-primary text-on-primary font-semibold shadow-sm transition-all" data-group="milk" data-val="whole">Entera</button>
+<button class="mod-btn flex-1 py-1 rounded-md font-label-sm text-label-sm text-on-surface-variant text-center transition-all" data-group="milk" data-val="oat">Avena +$15</button>
+<button class="mod-btn flex-1 py-1 rounded-md font-label-sm text-label-sm text-on-surface-variant text-center transition-all" data-group="milk" data-val="delact">Deslact.</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Cart Bar Floating Micro-Indicator (Appears dynamically upon adding item) -->
+<div class="hidden mx-gutter-mobile mb-3 bg-inverse-surface text-inverse-on-surface px-4 py-2.5 rounded-xl shadow-lg flex items-center justify-between" id="cart-floater">
+<div class="flex items-center gap-2">
+<div class="w-6 h-6 rounded-full bg-secondary-container text-on-surface flex items-center justify-center font-label-sm text-label-sm font-bold" id="cart-count">1</div>
+<span class="font-body-sm text-body-sm tracking-tight" id="cart-text">Producto listo para ordenar</span>
+</div>
+<span class="font-label-md text-label-md font-bold text-secondary-container" id="cart-total">$0 MXN</span>
+</div>
+<!-- Products Container (Categorized Stacks) -->
+<div class="flex flex-col gap-6 px-gutter-mobile pb-4" id="products-catalog">
+<!-- SECCIÓN: WAFFLES DULCES -->
+<section class="menu-section flex flex-col gap-3" data-section-cat="waffles-dulces">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-sm bg-primary"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Waffles de Autor</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Masa Crujiente Artesanal</span>
+</div>
+<!-- Item 1: Mazapán -->
+<article class="menu-item flex bg-surface-container-lowest rounded-xl p-3 shadow-sm gap-3 items-center" data-cat="waffles-dulces" data-name="waffle mazapan">
+<div class="relative w-20 h-20 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Close up overhead shot of golden artisan bubble waffle topped with authentic crushed Mexican peanut mazapan candy, sweet drizzle, served on clinical white bakery paper, crisp studio lighting, warm peanut tones" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC7Ki30KnkTnDu6spjP6ijYnG0JUptP8PEIPyltxuMjIbYrVGvOWEWll4zJRfxF-C1eCJYOAxLk0UKkYPOAyC6y7RMLdvL8p5uUWZdvUGRDpUdrFTaCRjLnmD1v35ytYR-o4fGLb3334HuSJYbP-cDr5y_J2TC66lWqweuy2BnzQscfVIEalsK3YsbQVmHA1XI2pV_V3Qxt9gFf7BgQC_fP3HppghD7B4ybDOFyz4UUy57zQbqj2PdV"/>
+<span class="absolute top-1 left-1 bg-secondary-container text-on-surface font-label-sm text-[9px] px-1 rounded font-bold uppercase tracking-wider">Top 1</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-1">
+<h3 class="font-headline-sm text-[16px] text-on-surface leading-snug truncate">Waffle Mazapán</h3>
+<span class="font-label-md text-label-md text-primary font-bold whitespace-nowrap">$90</span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant line-clamp-2 mt-0.5 leading-tight">Masa tibia, crema suave de cacahuate y topping de Mazapán original desmoronado.</p>
+<div class="flex items-center justify-between mt-2">
+<span class="font-label-sm text-label-sm text-primary font-semibold tracking-wide">Pluma Hidalgo roast pair</span>
+<button aria-label="Agregar Waffle Mazapán" class="add-btn w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface shadow-sm active:scale-90 transition-transform" data-item="Waffle Mazapán" data-price="90">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Item 2: Choco Kaos -->
+<article class="menu-item flex bg-surface-container-lowest rounded-xl p-3 shadow-sm gap-3 items-center" data-cat="waffles-dulces" data-name="choco kaos waffle kinder m&amp;m crunch">
+<div class="relative w-20 h-20 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Ultra indulgent waffle loaded with Kinder Bueno sticks, Crunch chocolate shards, vibrant colorful M and M candies, chocolate ganache swirls, minimal modern cafe plating" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDb603_-JNw_jlrAaRMD5MSol5-bKG-OG1HB-YkZqmLpWlq3I7Mw11RxJ-W3763HqFwYlJVdTmB1ZgX7W8NX_qDsNYc_eBNTK80TA0__BD65IBZVzvIxclw14hF7gPVa48XWEwL_cZFE7yi_SSve6KncexkkefUFaENrcHviP_eQupqC9eHFJo-ZB4r2tJP7CELqMz9VteBaT5ofO064tSjDZrDS7aSXIyQYC4TW6u08FxHjVQRqT5W"/>
+<span class="absolute top-1 left-1 bg-primary text-on-primary font-label-sm text-[9px] px-1 rounded font-bold uppercase tracking-wider">Firma</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-1">
+<h3 class="font-headline-sm text-[16px] text-on-surface leading-snug truncate">Choco Kaos</h3>
+<span class="font-label-md text-label-md text-primary font-bold whitespace-nowrap">$110</span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant line-clamp-2 mt-0.5 leading-tight">Kinder Bueno, Crunch crujiente, M&amp;M's y baño de chocolate belga semi-amargo.</p>
+<div class="flex items-center justify-between mt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Intenso &amp; Crujiente</span>
+<button aria-label="Agregar Choco Kaos" class="add-btn w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface shadow-sm active:scale-90 transition-transform" data-item="Choco Kaos" data-price="110">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Item 3: Lotus Biscoff -->
+<article class="menu-item flex bg-surface-container-lowest rounded-xl p-3 shadow-sm gap-3 items-center" data-cat="waffles-dulces" data-name="lotus biscoff waffle">
+<div class="relative w-20 h-20 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Artisanal Belgian waffle coated with smooth caramelized Lotus Biscoff spread, whole crunchy Biscoff biscuit on top, warm cinnamon caramel aesthetic, brutalist studio food styling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBm5RS8xBaUJCDscnuCqI4zs1bExbW3lAK72ZoVBVnsbnmsE0wQ27ocSTMvPdDaaPUNt-pL2xN2Znq8UhD6GOOf_6SxtvvCNLZLc-PWpJ3-TYflDAdvfBrCSs0OFAYKjKytx5I9IQXn3hOvZZ8QrtTmPYBKaJjZPGXdkHhaVrwhQ5RdLl23U6rKN-ApZQdX90tg3xb0IG3Gs2zvYwolF3szlvT2eFPbuS5FMCjRtkwO_UmPmzHHD1kG"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-1">
+<h3 class="font-headline-sm text-[16px] text-on-surface leading-snug truncate">Waffle Lotus</h3>
+<span class="font-label-md text-label-md text-primary font-bold whitespace-nowrap">$110</span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant line-clamp-2 mt-0.5 leading-tight">Crema speculoos Lotus, galleta entera crocante y toque de sal de mar oaxaqueña.</p>
+<div class="flex items-center justify-between mt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Caramelo Especiado</span>
+<button aria-label="Agregar Waffle Lotus" class="add-btn w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface shadow-sm active:scale-90 transition-transform" data-item="Waffle Lotus" data-price="110">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Item 4: Oreo -->
+<article class="menu-item flex bg-surface-container-lowest rounded-xl p-3 shadow-sm gap-3 items-center" data-cat="waffles-dulces" data-name="oreo waffle cookies cream">
+<div class="relative w-20 h-20 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Deep black cocoa Oreo crumbs dusted over fresh golden waffle with vanilla glaze drizzle, crisp high contrast lighting, urban bakery vibe" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqkruM6-mRYRiuDj43_qyyXbcygIQnQk5wGs4ZLHbZ5Li4ZiXlU0lVSR2AaUJxcQR5HV3oRivA5Pe-uTHn5mqmFffbm6e9oU-XOV3bAxtDkWXK7IbZ69FvmOaRTuo1brpywi9Olml9xLv_T_7Z3l7QH5f__tU11P9ndfbWbX9Cnq_80HvaEVEszkrzRGvFIgmvoFa_s8iZyJmkl4nMbSKYBVOodPagaCmU9tdbpR35tX4U7gC02XDz"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-1">
+<h3 class="font-headline-sm text-[16px] text-on-surface leading-snug truncate">Waffle Oreo</h3>
+<span class="font-label-md text-label-md text-primary font-bold whitespace-nowrap">$95</span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant line-clamp-2 mt-0.5 leading-tight">Cookies &amp; cream fluff, trocitos de Oreo horneada y salsa de vainilla blanca.</p>
+<div class="flex items-center justify-between mt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Favorito Casual</span>
+<button aria-label="Agregar Waffle Oreo" class="add-btn w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface shadow-sm active:scale-90 transition-transform" data-item="Waffle Oreo" data-price="95">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</article>
+</section>
+<!-- SECCIÓN: WAFFLES SALADOS -->
+<section class="menu-section flex flex-col gap-3" data-section-cat="waffles-salados">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-sm bg-secondary-fixed-dim"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Waffles Salados &amp; Munchies</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Brunch Caliente</span>
+</div>
+<!-- Item: Clásico Salado Flamin Hot -->
+<article class="menu-item flex bg-surface-container-lowest rounded-xl p-3 shadow-sm gap-3 items-center" data-cat="waffles-salados" data-name="clasico salado waffle jamon queso flamin hot chipotle">
+<div class="relative w-20 h-20 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Savory toasted waffle sandwich oozing with melted manchego cheese, smoked ham slices, drizzled with chipotle aioli, topped with crushed spicy red flamin hot chips, high-energy street food styling" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkJmqB4mPVJ3-8dIVIwUoaYC2hlDHI62cI-JUkkCH9a4ar0qhqLYGkSxb9mWPJ2WBLYB6iYcYT2VFaQQxTwCDgTrfh9C22fbZUS8uem1qdWzSFVuyX2JHKKxwm3sCrPPUjn5lAlHljekH0jM-nevFjG4VV_yY52fbTDWkxlqLhdjdLiPRYOiSCi7AOjex3NFtjF40B2815R-grEHrDrdpDN2CBNY8rXDAuqv1FSR_p3qSn13BCNDYP"/>
+<span class="absolute top-1 left-1 bg-secondary-container text-on-surface font-label-sm text-[9px] px-1 rounded font-bold uppercase tracking-wider">Munchie</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-1">
+<h3 class="font-headline-sm text-[16px] text-on-surface leading-snug truncate">Clásico Salado Kaos</h3>
+<span class="font-label-md text-label-md text-primary font-bold whitespace-nowrap">$100</span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant line-clamp-2 mt-0.5 leading-tight">Jamón ahumado, queso manchego fundido, aderezo chipotle de la casa y costra de Sabritas Flamin Hot.</p>
+<div class="flex items-center justify-between mt-2">
+<span class="font-label-sm text-label-sm text-error font-semibold">Picocito &amp; Crujiente</span>
+<button aria-label="Agregar Clásico Salado" class="add-btn w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface shadow-sm active:scale-90 transition-transform" data-item="Clásico Salado Kaos" data-price="100">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</article>
+</section>
+<!-- SECCIÓN: TAPIOCAS & FUSIÓN -->
+<section class="menu-section flex flex-col gap-3" data-section-cat="tapiocas">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-sm bg-primary"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Tapiocas &amp; Bubble Drinks</h2>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold">M $70 / G $80</span>
+</div>
+<!-- Item: Taro Creme Brûlée -->
+<article class="menu-item flex bg-surface-container-lowest rounded-xl p-3 shadow-sm gap-3 items-center" data-cat="tapiocas" data-name="taro creme brulee boba tapioca">
+<div class="relative w-20 h-20 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Clear modern cup with purple taro milk tea, fresh black chewy boba pearls at bottom, torched caramelized sugar crust creme brulee layer on top, clean aesthetic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUIa8a-jESPNjU3a0qH61AopxLdMpsVmgNIrSaOYDmshNcyiHcSDsdN9w1fgO1eSn7vtjI-LXKSJiD8G2B_9iWXL2EPfnlx4iBOEX8xaEXRIDl7IZlPWmPDLAaRpOyIUk9-jTOgobwvIAHzSq8lu2bWXwZd1Qkq_XMzHdI3O4G5T13j206euoGeZb8ECTwkGMYK7DMbsWURnnKYS3wKU9Sfki2PtxEmMBt7IbivgIOv05KbGCPiIz-"/>
+<span class="absolute top-1 left-1 bg-on-surface text-secondary-container font-label-sm text-[9px] px-1 rounded font-bold uppercase tracking-wider">Top Boba</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-1">
+<h3 class="font-headline-sm text-[16px] text-on-surface leading-snug truncate">Taro Creme Brûlée</h3>
+<span class="font-label-md text-label-md text-primary font-bold whitespace-nowrap">$70 - $80</span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant line-clamp-2 mt-0.5 leading-tight">Base cremosa de taro con perlas de tapioca negra cocidas al dente y costra flameada de azúcar morena.</p>
+<div class="flex items-center justify-between mt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Base Leche</span>
+<button aria-label="Agregar Taro Creme Brûlée" class="add-btn w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface shadow-sm active:scale-90 transition-transform" data-item="Taro Creme Brûlée" data-price="70">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Item: Fresa Creme Brûlée -->
+<article class="menu-item flex bg-surface-container-lowest rounded-xl p-3 shadow-sm gap-3 items-center" data-cat="tapiocas" data-name="fresa creme brulee boba milk tea">
+<div class="relative w-20 h-20 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Pastel pink strawberry milk drink in clear takeaway cup with dark boba pearls, marbled strawberry compote swirls, burnt torched custard foam cap" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPZ2sYTFcUL5uTmLjo3p8kCiVEECiMPO6uFkHPYypON_J_pI-dJUuHtY219r0puyrqgAF3Cee510MM0sdb_XIr_k-kmnlJyLQ0eTUAk6debWLwzb06Akh03wpK5Z56rzWEAC52mnmic8EQ7BfYGjZ8tyzdXnd9rA1tIYx-4LUFoRRRvmc8DPnEsNfgIO5Ldh2OxG8U1taKHKpO3DJUZPOjSYLDB_L6BBznJASYWoZk8HlxbxIZ0v1J"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-1">
+<h3 class="font-headline-sm text-[16px] text-on-surface leading-snug truncate">Fresa Creme Brûlée</h3>
+<span class="font-label-md text-label-md text-primary font-bold whitespace-nowrap">$70 - $80</span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant line-clamp-2 mt-0.5 leading-tight">Compota de fresa natural macerada, perlas suaves y espuma densa de crema quemada.</p>
+<div class="flex items-center justify-between mt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Base Leche</span>
+<button aria-label="Agregar Fresa Creme Brûlée" class="add-btn w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface shadow-sm active:scale-90 transition-transform" data-item="Fresa Creme Brûlée" data-price="70">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Item: Blue Matcha -->
+<article class="menu-item flex bg-surface-container-lowest rounded-xl p-3 shadow-sm gap-3 items-center" data-cat="tapiocas" data-name="blue matcha tapioca infusion">
+<div class="relative w-20 h-20 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Vibrant layered drink with deep butterfly pea flower electric blue tea floating over iced white oat milk and brown sugar pearls, editorial beverage photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoDFvvBstKAOpe1NfB45kfHAag-LttG82m3ZHYZ__9S7J9H3VxSRDTqCyGSX4hIHFaEj7GXmXTZC1fAjr_hbQ-SM6wXud9sZlTcrBbYadys2waf6CbiqAHUKwWpGrZnIAC973jTcbOuBNCdqlBOQ3RUuE2og-fxqkAQ3tbVDb260qUozTS22yIkh-DKbXOk_emZQ-P_FKKWST7lcDevZNZAUgDhKas3Cpelgqpwyn80j2cxgdEzzfc"/>
+<span class="absolute top-1 left-1 bg-secondary-container text-on-surface font-label-sm text-[9px] px-1 rounded font-bold uppercase tracking-wider">Iconic</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-1">
+<h3 class="font-headline-sm text-[16px] text-on-surface leading-snug truncate">Blue Matcha Fusión</h3>
+<span class="font-label-md text-label-md text-primary font-bold whitespace-nowrap">$70 - $80</span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant line-clamp-2 mt-0.5 leading-tight">Flor de conchita azul (butterfly pea) y matcha grado ceremonial sobre leche espumada.</p>
+<div class="flex items-center justify-between mt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Antioxidante Natural</span>
+<button aria-label="Agregar Blue Matcha" class="add-btn w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface shadow-sm active:scale-90 transition-transform" data-item="Blue Matcha" data-price="70">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</article>
+</section>
+<!-- SECCIÓN: CAFÉ DE ESPECIALIDAD & CLOUDY -->
+<section class="menu-section flex flex-col gap-3" data-section-cat="cafe">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-sm bg-primary-container"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Café &amp; Cloudy Bar</h2>
+</div>
+<span class="font-label-sm text-label-sm text-on-surface-variant">Grano Pluma Hidalgo</span>
+</div>
+<!-- Item: Cloudy Caramel Macchiato -->
+<article class="menu-item flex bg-surface-container-lowest rounded-xl p-3 shadow-sm gap-3 items-center" data-cat="cafe" data-name="cloudy caramel macchiato cold foam cafe especialidad">
+<div class="relative w-20 h-20 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Iced specialty espresso poured over velvety cold cloud foam and house-made vanilla bean syrup, dripping salted caramel streaks inside clear minimalist glass tumbler" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAY0jYJDWOSh9bvVV2ad6w2hTW7tHShxjK0Zp-xMLsfKYg_NJT06mT0EYaR46xCzesZa56zig-bNSENsKP0DjSVeYItRsiBW1EMyngBN7tqiZGFLRDZkToWuT-ClfxvCafBS4F69PHW7dUD00V4MTAvH0DMqL0E-ZOBKInuKjrapoR63g-7cvmDhOhV4FBoSCxprFwoGcE6nS_4G1TbYJkThphbD0vx8zJzSUG5iZ1w1MXEOZFi3jiA"/>
+<span class="absolute top-1 left-1 bg-secondary-container text-on-surface font-label-sm text-[9px] px-1 rounded font-bold uppercase tracking-wider">Cloudy</span>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-1">
+<h3 class="font-headline-sm text-[16px] text-on-surface leading-snug truncate">Cloudy Caramel Macchiato</h3>
+<span class="font-label-md text-label-md text-primary font-bold whitespace-nowrap">$80</span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant line-clamp-2 mt-0.5 leading-tight">Espresso doble de altura, espuma densa helada tipo nube y caramelo salado.</p>
+<div class="flex items-center justify-between mt-2">
+<span class="font-label-sm text-label-sm text-primary font-bold">Best Seller Café</span>
+<button aria-label="Agregar Cloudy Caramel" class="add-btn w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface shadow-sm active:scale-90 transition-transform" data-item="Cloudy Caramel" data-price="80">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Item: Strawberry Matcha -->
+<article class="menu-item flex bg-surface-container-lowest rounded-xl p-3 shadow-sm gap-3 items-center" data-cat="cafe" data-name="strawberry matcha latte uji">
+<div class="relative w-20 h-20 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Striking triple-layered iced drink with red strawberry puree at bottom, pure white milk in center, rich vibrant Uji green matcha float on top, natural bright lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOgp9Qdx0We346dD1Vh7cVj0yke1a6vmEtfYrhIWEIZOhSq-Q7Vjf21-F2kzNrye16hYpWyTJjzxh9SgaRY-pmyOoe2RJ1LGnnh7GNmFU32HriZ75i_6xbLNVriu8afWjzXJDoi42hY3hoX9HeesmtaAoYKIbjAP9lxYWtWODxF0l6be962-b5mUBOCImmRhoz3hAFIvFvenPPb9NCGoaQICapWpaAxGNeti6o2gKewTZCa-g6lkNf"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-1">
+<h3 class="font-headline-sm text-[16px] text-on-surface leading-snug truncate">Strawberry Matcha</h3>
+<span class="font-label-md text-label-md text-primary font-bold whitespace-nowrap">$80</span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant line-clamp-2 mt-0.5 leading-tight">Tricolor sensorial: mermelada rústica de fresa fresca, leche a elegir y matcha japonés batido.</p>
+<div class="flex items-center justify-between mt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Uji Ceremonial</span>
+<button aria-label="Agregar Strawberry Matcha" class="add-btn w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface shadow-sm active:scale-90 transition-transform" data-item="Strawberry Matcha" data-price="80">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Item: Caramel Latte -->
+<article class="menu-item flex bg-surface-container-lowest rounded-xl p-3 shadow-sm gap-3 items-center" data-cat="cafe" data-name="caramel latte cafe caliente frio">
+<div class="relative w-20 h-20 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Ceramic mug filled with silky textured caramel latte topped with precise microfoam rosette latte art, unbleached napkin, modern espresso bar context" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDVcwkMa2s9fdgk-p_xevpS8Y7hQITSGM047Cw5lvJRBZ8oY1gzU1yZEnUyrC-mJ-akw1U36fAU9fu2D7NvigTYlLN_HnWlQwZqAIAatwd8n_Uh_rwGcXPJylE4VaiysekNN6MhiRT3A-R_inC0xXAgzd3yHAwRohH_c9u6R-cvnBVoJ32XkiI5XFpgr8WCsBveLpa4xw2oiExQntTLAYgW7-E5BK7tZPVmUk2gF_gdIs_eCmYHbpv6"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-1">
+<h3 class="font-headline-sm text-[16px] text-on-surface leading-snug truncate">Caramel Latte</h3>
+<span class="font-label-md text-label-md text-primary font-bold whitespace-nowrap">$65</span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant line-clamp-2 mt-0.5 leading-tight">Doble shot espresso con notas achocolatadas, jarabe artesanal de caramelo y leche vaporizada.</p>
+<div class="flex items-center justify-between mt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Caliente o Frío</span>
+<button aria-label="Agregar Caramel Latte" class="add-btn w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface shadow-sm active:scale-90 transition-transform" data-item="Caramel Latte" data-price="65">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Item: Capuccino & Americano Compact Mini-Cards -->
+<div class="grid grid-cols-2 gap-2.5">
+<div class="menu-item bg-surface-container-lowest rounded-xl p-3 shadow-sm flex flex-col justify-between" data-cat="cafe" data-name="capuccino cafe">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-[15px] text-on-surface">Capuccino</span>
+<span class="font-label-md text-label-md text-primary font-bold">$50</span>
+</div>
+<p class="font-body-sm text-[11px] text-on-surface-variant mt-1">Microespuma sedosa y espresso balanceado.</p>
+</div>
+<button class="add-btn mt-3 w-full py-1.5 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold flex items-center justify-center gap-1 active:scale-95 transition-transform" data-item="Capuccino" data-price="50">
+<span>Añadir</span>
+<span class="material-symbols-outlined text-[14px]">add</span>
+</button>
+</div>
+<div class="menu-item bg-surface-container-lowest rounded-xl p-3 shadow-sm flex flex-col justify-between" data-cat="cafe" data-name="americano espresso agua cafe especialidad">
+<div>
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-[15px] text-on-surface">Americano</span>
+<span class="font-label-md text-label-md text-primary font-bold">$40</span>
+</div>
+<p class="font-body-sm text-[11px] text-on-surface-variant mt-1">Tueste medio con notas a naranja y miel.</p>
+</div>
+<button class="add-btn mt-3 w-full py-1.5 rounded-lg bg-surface-container text-on-surface font-label-sm text-label-sm font-semibold flex items-center justify-center gap-1 active:scale-95 transition-transform" data-item="Americano" data-price="40">
+<span>Añadir</span>
+<span class="material-symbols-outlined text-[14px]">add</span>
+</button>
+</div>
+</div>
+</section>
+<!-- SECCIÓN: SODAS & REFRESHER (BASE AGUA) -->
+<section class="menu-section flex flex-col gap-3" data-section-cat="sodas">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-2.5 h-2.5 rounded-sm bg-secondary-container"></span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface tracking-tight">Sodas Artesanales &amp; Refresher</h2>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-bold">M $65 / G $75</span>
+</div>
+<!-- Item: Limonada Rosa -->
+<article class="menu-item flex bg-surface-container-lowest rounded-xl p-3 shadow-sm gap-3 items-center" data-cat="sodas" data-name="limonada rosa soda refresher agua tapioca popping">
+<div class="relative w-20 h-20 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Sparkling pink lemonade with popping boba spheres, crushed mint leaves, fresh lime wheels, condensation on glass, bright energetic summer aesthetics" src="https://lh3.googleusercontent.com/aida-public/AB6AXuADuaB_ttoujbC9Y9BYXjKIF3B-AkzjOQhgQ7Ma5DAfZC6Glj1rOjltbIdmaKqTZybvJJ0iK6mmw-aKANJZ7YLgS4kKp-4eUnYfvOZ67f9Fbjo-hKAQH7vbrtglIzg4T3nk84h0nC6fOWwZqq9_Y3Td6601mDsGyjXlOvgL_hgHiy9JjeyxdaZXPVl6LgLLwjSHLbdvNJAjwbELMVv96Tgkpu-xnW_5EUw-Pw7kEeQsc4kdKahfMl0i"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-1">
+<h3 class="font-headline-sm text-[16px] text-on-surface leading-snug truncate">Limonada Rosa Refresher</h3>
+<span class="font-label-md text-label-md text-primary font-bold whitespace-nowrap">$65 - $75</span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant line-clamp-2 mt-0.5 leading-tight">Agua mineral gasificada, infusión de frutos rojos frescos, limón colima y perlas explosivas de lichi.</p>
+<div class="flex items-center justify-between mt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Base Agua Mineral</span>
+<button aria-label="Agregar Limonada Rosa" class="add-btn w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface shadow-sm active:scale-90 transition-transform" data-item="Limonada Rosa" data-price="65">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Item: Maracuyá Refresher -->
+<article class="menu-item flex bg-surface-container-lowest rounded-xl p-3 shadow-sm gap-3 items-center" data-cat="sodas" data-name="maracuya passionfruit refresher soda">
+<div class="relative w-20 h-20 rounded-lg overflow-hidden flex-shrink-0 bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Golden tropical passion fruit soda with floating seeds, vibrant yellow hues, fresh mint sprig, crisp clean lighting, high resolution cocktail glass presentation" src="https://lh3.googleusercontent.com/aida-public/AB6AXuABaXajL08rr3TejHn8EVWxXq3NCbr_5R0YSes2ansRe4oyw2QccuiVNjdlBXrt03m10KCRtG7UF_pyiPVn4okxC85lvJoDpmAMHw_PExDnQs8uekWnjeuD0D6TKqmu2CAA5_ZfbqJBeEQK_HqnB_qTS1faG_p8V42NoDyh3FrhI97LcPHixxzzORJLovzwy0TLTmiGeG2ZY4jWgpM7BX-gzrWSFrqWPRM326wThuNVBXOnM0m0h1BC"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-start justify-between gap-1">
+<h3 class="font-headline-sm text-[16px] text-on-surface leading-snug truncate">Maracuyá Tropical</h3>
+<span class="font-label-md text-label-md text-primary font-bold whitespace-nowrap">$65 - $75</span>
+</div>
+<p class="font-body-sm text-[12px] text-on-surface-variant line-clamp-2 mt-0.5 leading-tight">Pulpa ácida de maracuyá real, rodajas de naranja dulce y burbuja efervescente.</p>
+<div class="flex items-center justify-between mt-2">
+<span class="font-label-sm text-label-sm text-on-surface-variant">Ultra Refrescante</span>
+<button aria-label="Agregar Maracuyá Tropical" class="add-btn w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface shadow-sm active:scale-90 transition-transform" data-item="Maracuyá Tropical" data-price="65">
+<span class="material-symbols-outlined text-[18px]">add</span>
+</button>
+</div>
+</div>
+</article>
+</section>
+<!-- Empty State for Search -->
+<div class="hidden flex-col items-center justify-center py-10 px-4 text-center" id="empty-state">
+<div class="w-14 h-14 rounded-full bg-surface-container-high flex items-center justify-center text-primary mb-3">
+<span class="material-symbols-outlined text-[28px]">search_off</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">No encontramos ese antojo</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 max-w-xs">Intenta con 'waffle', 'tapioca', 'matcha' o revisa nuestras categorías arriba.</p>
+</div>
+</div>
+<!-- Direct Quick-Order Micro-Banner (WhatsApp & Delivery Apps) -->
+<div class="mx-gutter-mobile mb-4 p-4 rounded-xl bg-primary text-on-primary shadow-sm flex flex-col gap-3">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-secondary-container text-[22px]">bolt</span>
+<span class="font-label-md text-label-md font-bold uppercase tracking-wider text-secondary-container">Pide Directo sin Esperas</span>
+</div>
+<span class="font-label-sm text-label-sm bg-on-primary/10 px-2 py-0.5 rounded text-on-primary">15-20 min</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-primary/90 leading-snug">
+      Preparamos tu waffle al momento para que llegue caliente y crujiente a tu puerta en el Centro de Oaxaca.
+    </p>
+<div class="grid grid-cols-2 gap-2 pt-1">
+<a class="flex items-center justify-center gap-1.5 bg-secondary-container text-on-surface font-label-md text-label-md font-bold py-2.5 px-3 rounded-lg shadow-[2px_2px_0px_#191c1d] active:scale-95 transition-transform text-center" href="https://wa.me/?text=Hola%20Kaos!%20Quiero%20hacer%20un%20pedido%20del%20menú" rel="noopener noreferrer" target="_blank">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>WhatsApp</span>
+</a>
+<div class="flex items-center gap-1.5 bg-surface-container-lowest text-on-surface font-label-md text-label-md font-semibold py-2 px-2.5 rounded-lg justify-center shadow-sm">
+<span class="material-symbols-outlined text-[18px] text-primary">moped</span>
+<span class="font-label-sm text-label-sm tracking-tight text-on-surface font-bold">Uber Eats / Rappi</span>
+</div>
+</div>
+</div>
+<!-- Origin / Transparency Micro-Footer Note -->
+<div class="px-gutter-mobile pb-6 text-center">
+<p class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-wider">
+      Café 100% Oaxaqueño • Tapioca artesanal hervida diariamente
+    </p>
+</div>
+</div>
+<!-- Micro-Interactions Client Logic -->
+<script>
+  (function() {
+    // 1. Navigation Active State Sync (Menu selected)
+    const navItems = document.querySelectorAll('nav a[data-path]');
+    navItems.forEach(item => {
+      if (item.getAttribute('data-path') === 'menu') {
+        item.className = 'flex-1 flex flex-col items-center justify-center py-2 px-1 rounded-full bg-on-surface text-secondary-container font-semibold shadow-[0_2px_8px_rgba(0,0,0,0.12)] min-h-[44px] transition-all duration-200';
+      }
+    });
+
+    // 2. Interactive Drink Modifier Toggle
+    const modifierButtons = document.querySelectorAll('.mod-btn');
+    modifierButtons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const group = btn.getAttribute('data-group');
+        document.querySelectorAll(`.mod-btn[data-group="${group}"]`).forEach(sibling => {
+          sibling.className = 'mod-btn flex-1 py-1 rounded-md font-label-sm text-label-sm text-on-surface-variant text-center transition-all';
+        });
+        btn.className = 'mod-btn flex-1 py-1 rounded-md font-label-sm text-label-sm bg-primary text-on-primary font-semibold shadow-sm transition-all';
+      });
+    });
+
+    // 3. Category Chip Filter
+    const catChips = document.querySelectorAll('.cat-chip');
+    const sections = document.querySelectorAll('.menu-section');
+    const items = document.querySelectorAll('.menu-item');
+    const emptyState = document.getElementById('empty-state');
+
+    catChips.forEach(chip => {
+      chip.addEventListener('click', () => {
+        catChips.forEach(c => {
+          c.className = 'cat-chip whitespace-nowrap px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-surface-container-high text-on-surface font-medium transition-all';
+        });
+        chip.className = 'cat-chip whitespace-nowrap px-3.5 py-1.5 rounded-full font-label-md text-label-md bg-on-surface text-secondary-container font-semibold shadow-[0_2px_6px_rgba(0,0,0,0.12)] transition-all';
+
+        const selectedCat = chip.getAttribute('data-cat');
+        let visibleCount = 0;
+
+        sections.forEach(section => {
+          const sectionCat = section.getAttribute('data-section-cat');
+          if (selectedCat === 'all' || sectionCat === selectedCat) {
+            section.classList.remove('hidden');
+            visibleCount++;
+          } else {
+            section.classList.add('hidden');
+          }
+        });
+
+        if (visibleCount === 0) {
+          emptyState.classList.remove('hidden');
+          emptyState.classList.add('flex');
+        } else {
+          emptyState.classList.add('hidden');
+          emptyState.classList.remove('flex');
+        }
+      });
+    });
+
+    // 4. Live Search
+    const searchInput = document.getElementById('menu-search-input');
+    const clearBtn = document.getElementById('clear-search-btn');
+
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value.toLowerCase().trim();
+      if (query.length > 0) {
+        clearBtn.classList.remove('hidden');
+      } else {
+        clearBtn.classList.add('hidden');
+      }
+
+      let matches = 0;
+      items.forEach(item => {
+        const text = item.getAttribute('data-name') || '';
+        if (text.includes(query)) {
+          item.classList.remove('hidden');
+          matches++;
+        } else {
+          item.classList.add('hidden');
+        }
+      });
+
+      // Hide or show sections depending on visible children
+      sections.forEach(section => {
+        const visibleItems = section.querySelectorAll('.menu-item:not(.hidden)');
+        if (visibleItems.length === 0) {
+          section.classList.add('hidden');
+        } else {
+          section.classList.remove('hidden');
+        }
+      });
+
+      if (matches === 0) {
+        emptyState.classList.remove('hidden');
+        emptyState.classList.add('flex');
+      } else {
+        emptyState.classList.add('hidden');
+        emptyState.classList.remove('flex');
+      }
+    });
+
+    clearBtn.addEventListener('click', () => {
+      searchInput.value = '';
+      clearBtn.classList.add('hidden');
+      items.forEach(item => item.classList.remove('hidden'));
+      sections.forEach(section => section.classList.remove('hidden'));
+      emptyState.classList.add('hidden');
+      emptyState.classList.remove('flex');
+    });
+
+    // 5. Tactile Cart Counter & Toast Notification
+    let totalItems = 0;
+    let totalPrice = 0;
+    const cartFloater = document.getElementById('cart-floater');
+    const cartCount = document.getElementById('cart-count');
+    const cartTotal = document.getElementById('cart-total');
+    const cartText = document.getElementById('cart-text');
+    const addButtons = document.querySelectorAll('.add-btn');
+
+    addButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const itemName = btn.getAttribute('data-item');
+        const price = parseInt(btn.getAttribute('data-price') || '0', 10);
+
+        totalItems += 1;
+        totalPrice += price;
+
+        cartCount.textContent = totalItems;
+        cartTotal.textContent = '$' + totalPrice + ' MXN';
+        cartText.textContent = totalItems === 1 ? itemName + ' agregado' : totalItems + ' items configurados';
+
+        cartFloater.classList.remove('hidden');
+        cartFloater.classList.add('flex');
+
+        // Tactile button bounce
+        btn.classList.add('bg-secondary-container', 'text-on-surface');
+        setTimeout(() => {
+          btn.classList.remove('bg-secondary-container', 'text-on-surface');
+        }, 300);
+      });
+    });
+
+    // 6. Playful Mascot Blink on Click
+    const mascotBadge = document.getElementById('mascot-badge');
+    const mascotEyes = document.querySelectorAll('.mascot-eye');
+    if (mascotBadge) {
+      mascotBadge.addEventListener('click', () => {
+        mascotEyes.forEach(eye => {
+          eye.style.transform = 'scaleY(0.1)';
+        });
+        setTimeout(() => {
+          mascotEyes.forEach(eye => {
+            eye.style.transform = 'scaleY(1)';
+          });
+        }, 180);
+      });
+    }
+  })();
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe pointer-events-none px-gutter-mobile mb-3" data-active-classes="bg-on-surface text-secondary-container font-semibold shadow-[0_2px_8px_rgba(0,0,0,0.12)]"><div class="max-w-md mx-auto pointer-events-auto bg-surface-container-lowest/90 backdrop-blur-xl rounded-full p-1.5 shadow-[0_4px_20px_rgba(0,0,0,0.08)] flex items-center justify-between"><a class="flex-1 flex flex-col items-center justify-center py-2 px-1 rounded-full text-on-surface-variant transition-all duration-200 min-h-[44px]" data-path="inicio" href="#"><span class="material-symbols-outlined text-[20px]">local_cafe</span><span class="font-label-sm text-label-sm mt-0.5 tracking-tight">Inicio</span></a><a class="flex-1 flex flex-col items-center justify-center py-2 px-1 rounded-full text-on-surface-variant transition-all duration-200 min-h-[44px]" data-path="menu" href="#"><span class="material-symbols-outlined text-[20px]">restaurant_menu</span><span class="font-label-sm text-label-sm mt-0.5 tracking-tight">Menú</span></a><a class="flex-1 flex flex-col items-center justify-center py-2 px-1 rounded-full text-on-surface-variant transition-all duration-200 min-h-[44px]" data-path="galeria" href="#"><span class="material-symbols-outlined text-[20px]">photo_camera</span><span class="font-label-sm text-label-sm mt-0.5 tracking-tight">Galería</span></a><a class="flex-1 flex flex-col items-center justify-center py-2 px-1 rounded-full text-on-surface-variant transition-all duration-200 min-h-[44px]" data-path="comunidad-blaise" href="#"><span class="material-symbols-outlined text-[20px]">group</span><span class="font-label-sm text-label-sm mt-0.5 tracking-tight">Blaise</span></a><a class="flex-1 flex flex-col items-center justify-center py-2 px-1 rounded-full text-on-surface-variant transition-all duration-200 min-h-[44px]" data-path="ubicacion" href="#"><span class="material-symbols-outlined text-[20px]">location_on</span><span class="font-label-sm text-label-sm mt-0.5 tracking-tight">Ubicación</span></a></div></nav>
+</body></html>
