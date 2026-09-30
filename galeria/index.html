@@ -509,4 +509,8 @@
       if (e.key === 'Escape') closeLightbox();
     });
   </script>
+<!-- CGL-NAV: cablea los botones del export (data-path o etiqueta con href="#") a las rutas reales del portal. Solo toca href="#": los links externos (Maps, WhatsApp, Instagram) quedan intactos. -->
+<script>
+(function(){var R={"inicio":"/","menu":"/menu","galeria":"/galeria","galeria-interactiva":"/galeria","comunidad-blaise":"/comunidad","ubicacion":"/ubicacion","ubicacion-y-horarios":"/ubicacion"};document.querySelectorAll('a[href="#"]').forEach(function(a){var t=R[a.getAttribute("data-path")]||null;if(!t){var s=(" "+(a.textContent||"").toLowerCase()+" ").replace(/\s+/g," ");if(s.indexOf("galer")>=0)t="/galeria";else if(s.indexOf("blaise")>=0)t="/comunidad";else if(s.indexOf("ubica")>=0||s.indexOf("llegar")>=0||s.indexOf("visita")>=0||s.indexOf("tanos")>=0)t="/ubicacion";else if(s.indexOf("men")>=0)t="/menu";else if(s.indexOf("inicio")>=0)t="/";}if(t)a.setAttribute("href",t);});})();
+</script>
 </body></html>

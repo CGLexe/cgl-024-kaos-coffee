@@ -18,6 +18,10 @@ Portal multipágina de **CGL Design**.
 | `/inicio-movil` | `kaos_inicio_m_vil_optimizado_corto/code.html` |
 | `DESIGN.md` | `electric_oaxaca_minimal/DESIGN.md` |
 | `vercel.json` | Config mínima para estático en Vercel (`cleanUrls`) |
+| `CGL-NAV` | Snippet inyectado antes de `</body>` en las 7 páginas: cablea los
+botones del export (`data-path` o etiqueta con `href="#"`) a las rutas
+reales (`/` · `/menu` · `/galeria` · `/comunidad` · `/ubicacion`).
+Solo toca `href="#"`: Maps, WhatsApp e Instagram quedan intactos. |
 
 ## Origen
 
